@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="98px" height="98px" viewBox="0 0 98 98" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons/ChevronArrowL</title>
+    <defs>
+        <filter x="-112.5%" y="-112.5%" width="325.0%" height="325.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.176470593   0 0 0 0 0.36470589   0 0 0 0 0.737254918  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="דף-בית" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="דף-בית-עם-כיתוב-שחור-על-ירוק" transform="translate(-143.000000, -4142.000000)">
+            <g id="Section-3" transform="translate(168.000000, 3912.000000)">
+                <g id="Buttons/38px/Arrow" filter="url(#filter-1)" transform="translate(0.000000, 255.000000)">
+                    <g id="Icons/ChevronArrowL" transform="translate(15.000000, 15.000000)">
+                        <path d="M0,0 L18,0 L18,18 L0,18 Z" id="Icons/18px/Chevron-Arrow-(Background)"></path>
+                        <path d="M11.8242188,15.6474609 L5.4609375,9.24902344 L11.8242188,2.88574219 C11.9648438,2.74511719 11.9648438,2.46386719 11.8242188,2.28808594 L11.1210938,1.62011719 C10.9453125,1.44433594 10.6992188,1.44433594 10.5234375,1.62011719 L3.140625,8.96777344 C3,9.14355469 3,9.38964844 3.140625,9.56542969 L10.5234375,16.9130859 C10.6992188,17.0888672 10.9453125,17.0888672 11.1210938,16.9130859 L11.8242188,16.2451172 C11.9648438,16.0693359 11.9648438,15.7880859 11.8242188,15.6474609 Z" id="" fill="#123985" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

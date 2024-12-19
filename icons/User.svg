@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18.6666679px" height="20.7513027px" viewBox="0 0 18.6666679 20.7513027" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons/25px/User</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="25" height="25"></rect>
+    </defs>
+    <g id="דף-כתבה" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="דף-כתבה---3-כפתורי-פעולה" transform="translate(-37.166504, -25.125000)">
+            <g id="Icons/25px/User" transform="translate(34.000000, 23.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="User-/-User_02-(Background/Mask)"></g>
+                <path d="M4.16650391,21.8763027 C4.16650391,18.9998192 7.89746438,16.6679688 12.4998379,16.6679688 C17.1022119,16.6679688 20.8331718,18.9998192 20.8331718,21.8763027" id="Vector" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0,0" mask="url(#mask-2)"></path>
+                <path d="M17.7081718,8.33333349 C17.7081718,5.45685025 15.3763216,3.125 12.4998379,3.125 C9.62335437,3.125 7.29150391,5.45685025 7.29150391,8.33333349 C7.29150391,11.209817 9.62335437,13.541667 12.4998379,13.541667 C15.3763216,13.541667 17.7081718,11.209817 17.7081718,8.33333349 Z" id="Vector" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0,0" fill-rule="nonzero" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

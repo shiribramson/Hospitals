@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="12px" viewBox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons/14px/ArrowLeft</title>
+    <g id="רכיב-חירום" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="באנר-חירום" transform="translate(-1565.000000, -428.000000)" fill="#28A850" fill-rule="nonzero">
+            <g id="Group" transform="translate(619.000000, 289.000000)">
+                <g id="Group-2" transform="translate(943.000000, 132.000000)">
+                    <g id="Icons/14px/ArrowLeft" transform="translate(3.333333, 7.373047)">
+                        <path d="M6.51041651,10.4882812 L1.79687496,5.74869792 L6.51041651,1.03515625 C6.61458317,0.930989583 6.61458317,0.72265625 6.51041651,0.592447917 L5.98958319,0.09765625 C5.85937486,-0.0325520833 5.6770832,-0.0325520833 5.54687487,0.09765625 L0.0781249981,5.54036458 C-0.026041666,5.67057292 -0.026041666,5.85286458 0.0781249981,5.98307292 L5.54687487,11.4257812 C5.6770832,11.5559896 5.85937486,11.5559896 5.98958319,11.4257812 L6.51041651,10.9309896 C6.61458317,10.8007812 6.61458317,10.5924479 6.51041651,10.4882812 Z" id="" transform="translate(3.294271, 5.761719) scale(1, -1) translate(-3.294271, -5.761719) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

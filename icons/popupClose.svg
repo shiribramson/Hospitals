@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="68px" height="68px" viewBox="0 0 68 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons/28px/Close</title>
+    <defs>
+        <filter x="-5.4%" y="-8.2%" width="132.6%" height="116.4%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.176470588   0 0 0 0 0.364705882   0 0 0 0 0.737254902  0 0 0 0.19 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="דף-לובי" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="פופ-אפ-תמונה" transform="translate(-464.000000, -218.000000)">
+            <g id="Popup/MedicineInfo" filter="url(#filter-1)" transform="translate(460.000000, 210.000000)">
+                <g id="Icons/28px/Close" transform="translate(24.000000, 24.000000)">
+                    <circle id="Oval" fill="#0A7C94" cx="14" cy="14" r="14"></circle>
+                    <g id="Group" transform="translate(8.937500, 9.333064)" stroke="#FFFFFF" stroke-linecap="round" stroke-width="2">
+                        <line x1="0" y1="7.27595761e-12" x2="10.1044357" y2="10.1044357" id="Path-2"></line>
+                        <line x1="0" y1="0" x2="10.1044357" y2="10.1044357" id="Path-2" transform="translate(5.052218, 5.052218) rotate(90.000000) translate(-5.052218, -5.052218) "></line>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

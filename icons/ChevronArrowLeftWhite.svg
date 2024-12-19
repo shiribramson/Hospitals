@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="94px" height="94px" viewBox="0 0 94 94" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons/18px/ChevronArrowLeft</title>
+    <defs>
+        <filter x="-168.7%" y="-168.7%" width="437.5%" height="437.5%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.176470593   0 0 0 0 0.36470589   0 0 0 0 0.737254918  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="-דף-יחידה" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="דף-יחידה-אר&quot;ן" transform="translate(-1482.000000, -404.000000)">
+            <g id="Rectangle" transform="translate(0.000000, 163.000000)">
+                <g id="Group-5" transform="translate(1513.000000, 272.000000)">
+                    <g id="Buttons/38px/ArrowLeft" filter="url(#filter-1)" transform="translate(16.000000, 16.000000) scale(-1, 1) translate(-16.000000, -16.000000) ">
+                        <g id="Icons/18px/ChevronArrowLeft" transform="translate(9.500000, 9.500000)">
+                            <path d="M0,0 L13,0 L13,13 L0,13 Z" id="Icons/18px/Chevron-Arrow-(Background)" transform="translate(6.500000, 6.500000) scale(1, -1) rotate(-180.000000) translate(-6.500000, -6.500000) "></path>
+                            <path d="M10.7317708,11.300944 L6.13606771,6.67985026 L10.7317708,2.08414714 C10.8333333,1.98258464 10.8333333,1.77945964 10.7317708,1.65250651 L10.2239583,1.17008464 C10.0970052,1.04313151 9.91927083,1.04313151 9.79231771,1.17008464 L4.46028646,6.47672526 C4.35872396,6.60367839 4.35872396,6.78141276 4.46028646,6.90836589 L9.79231771,12.2150065 C9.91927083,12.3419596 10.0970052,12.3419596 10.2239583,12.2150065 L10.7317708,11.7325846 C10.8333333,11.6056315 10.8333333,11.4025065 10.7317708,11.300944 Z" id="" fill="#FFFFFF" fill-rule="nonzero" transform="translate(7.596029, 6.692546) scale(1, -1) rotate(-180.000000) translate(-7.596029, -6.692546) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,64 @@
+.autocomplete {
+    position: relative;
+  }
+  
+  input {
+    border: 1px solid transparent;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+
+  .autocomplete-items {
+    position: absolute;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 89%;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 24px 0 rgba(45, 93, 188, 0.19);
+    border-radius: 4px;
+  }
+
+  .autocomplete-items{
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .autocomplete-items div {
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+ 
+  .autocomplete-items div::before {
+    content: "";
+    content: url("/images/search-icon-011.svg");
+    margin-left: 10px;
+    position: relative;
+    top: 2px;
+  }
+
+  
+  .autocomplete-items div:hover {
+    background-color: #e9e9e9; 
+  }
+
+  b, strong{
+    font-family: 'OpenSansHebrew-Regular';
+  }
+  
+
+  @media only screen and (max-width: 1024px) {
+    .autocomplete-items div {
+      text-align: right;
+    }
+
+    .autocomplete-items {
+      top: 53%;
+      z-index: 999;
+    }
+  }

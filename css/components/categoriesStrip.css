@@ -1,0 +1,127 @@
+/* Strip Caregories  */
+
+.hospitals-categories {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	background: rgba(255, 255, 255, 0.96);
+	box-shadow: 0 4px 24px 0 rgba(45, 93, 188, 0.19);
+	border-radius: 4px;
+	flex-direction: row;
+	padding: 10px;
+	width: 850px;
+	margin: -70px auto 20px;
+	position: relative;
+	z-index: 1;
+}
+
+.hospitals-categories a {
+	width: calc(100%/6);
+}
+
+.hospitals-categories a:hover,
+.hospitals-categories a:active,
+.hospitals-categories a:focus {
+	text-decoration: none;
+}
+
+.hospitals-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #E3E7F0;
+	border-radius: 0;
+	padding: 15px 10px 10px 10px;
+	transition: 0.3s all;
+	cursor: pointer;
+}
+
+
+a.hospital-category-link:not(:last-child):after {
+	content: '';
+	width: 1px;
+	height: 125px;
+	background: #E3E7F0;
+	position: absolute;
+	margin-right: 139px;
+	margin-top: -129px;
+}
+
+a.hospital-category-link:hover:after {
+	display: none;
+}
+
+.hospitals-wrapper:hover {
+	background: #E1EFF8;
+	border-radius: 4px;
+}
+
+.hospitals-wrapper img.icon {
+	width: 40px;
+	height: 40px;
+	object-fit: contain;
+}
+
+.hospitals-wrapper p {
+	font-size: 16px;
+	color: #061C3F;
+	letter-spacing: 0;
+	text-align: center;
+	line-height: 19px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 20px;
+	margin: 15px;
+	font-family: OpenSansHebrew-Bold;
+}
+
+
+@media only screen and (max-width: 1024px) {
+	.hospitals-categories {
+		margin: 0px auto 20px;
+	}
+
+	.hospitals-categories {
+		width: 88.5%;
+	}
+
+	.hospitals-categories a {
+		width: calc(100%/3);
+	}
+
+	a.hospital-category-link:not(:last-child):after {
+		display: none;
+	}
+
+	.hospitals-wrapper {
+		flex-basis: 30%;
+	}
+
+	.hospitals-wrapper p {
+		font-size: 14px;
+		margin: 0;
+		padding: 10px 0 0 0;
+		line-height: 17px;
+	}
+
+	.hospitals-wrapper img.icon {
+		width: 30px;
+		height: 30px;
+	}
+}
+
+
+@media only screen and (max-width: 768px) {
+	.hospitals-categories {
+		width: 88.5%;
+	}
+
+	.hospitals-wrapper {
+		flex-basis: 30%;
+	}
+}
+
+/* Strip Caregories  */

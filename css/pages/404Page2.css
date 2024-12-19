@@ -1,0 +1,262 @@
+body.ms-backgroundImage.page404v2-body {
+    background: none;
+}
+
+
+.page404v2-main-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.page404v2-main-wrapper .logo-colors-line-desktop-wrapper {
+    position: relative;
+    display: flex;
+    width: 102%;
+    left: 1%;
+}
+
+.page404v2-main-wrapper .logo-colors-line-desktop {
+    height: 10px;
+    width: 100%;
+    background-image: linear-gradient(65deg, #96d600, #96d600 20%, #29d1de 20.07%, #29d1de 40%, #17a1ba 40.07%, #17a1ba 60%, #00667d 60.07%, #00667d 80%, #044552 80.07% );
+    position: relative;
+    top: -6px;
+    transform: skew(0deg);
+}
+
+.page404v2-container {
+    position: relative;
+    height: 100vh;
+}
+
+.page404v2-main-wrapper .main-column-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.page404v2-main-wrapper h1 {
+    font-family: Ploni-Bold;
+    font-size: 38px;
+    color: #085763;
+    line-height: 100%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-404v2-inner-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.page404v2-main-wrapper h2 {
+    font-family: Ploni-Medium;
+    font-size: 24px;
+    color: #222425;
+    text-align: right;
+    line-height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+}
+
+.page404v2-main-wrapper h3 {
+    font-family: OpenSansHebrew-Bold;
+    font-size: 30px;
+    color: #061C3F;
+    text-align: center;
+    line-height: 36px;
+}
+
+.page404v2-main-wrapper img.main-img {
+    width: 550px;
+    height: 600px;
+    object-fit: contain;
+}
+
+.page404v2-main-wrapper .main-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 80px 0 0 0;
+}
+
+.page404v2-main-wrapper .main-text-section{
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+}
+
+.page404v2-main-wrapper .logo-section {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.page404v2-main-wrapper .main-text-section:last-child {
+    gap:32px;
+}
+
+.page404v2-main-wrapper .cta-items-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.page404v2-main-wrapper .hospital-page-cta {
+    align-items: center;
+    background: white;
+    box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.20);
+    padding: 15px 0 15px 0;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    font-family: OpenSansHebrew-Regular;
+    font-size: 18px;
+    color: #123985;
+    letter-spacing: 0;
+    line-height: 22px;
+    font-weight: 400;
+    border: 1px solid #123985;
+    width: 230px;
+    text-align: center;
+}
+
+.page404v2-main-wrapper .back-page-cta{
+    align-items: center;
+    box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.20);
+    color: white;
+    font-size: 18px;
+    padding: 15px 0 15px 0;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    background: #123985;
+    text-align: center;
+    transition: 0.3s all;
+    border-radius: 12px;
+    background: #2C657A;
+    width: 180px;
+}
+
+.page404v2-main-wrapper .back-page-cta:hover {
+    background: #2c657ae8;
+    color: white;
+}
+
+.page404v2-main-wrapper .logo-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 20px;
+    padding: 0 0 50px 0;
+}
+
+.page404v2-main-wrapper .logos-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    min-height: 50px;
+    object-fit: contain;
+}
+
+.page404v2-main-wrapper img.clalit-logo{
+    width: 130px;
+    object-fit: contain;
+    margin: 0 8px 0 0;
+}
+
+
+.page404v2-main-wrapper img.hospital-logo{
+    width: 180px;
+    object-fit: contain;
+    margin: 0 0 0 25px;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .page404v2-main-wrapper .main-column-wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .page404v2-main-wrapper .main-sections{
+        padding: 0 0 0 0;
+        gap: 20px;
+    }
+
+    .page-404v2-inner-wrapper{
+        position: inherit;
+        transform: none;
+    }
+
+    .page404v2-container{
+        height: auto;
+    }
+
+    .page404v2-main-wrapper img.hospital-logo{
+        width: 100px;
+    }
+
+    .page404v2-main-wrapper img.clalit-logo {
+        width: 100px;
+        margin: 0 5px 0 0;
+    }
+
+    .page404v2-main-wrapper .logo-wrapper{
+        padding: 30px 0 30px 0;
+    }
+
+    .page404v2-main-wrapper img.main-img{
+        max-width: 100%;
+        padding: 0 0 15px 0;
+        width: 150px;
+        height: 300px;
+    }
+
+    .page404v2-main-wrapper .cta-items-wrapper {
+        align-items: center;
+        padding: 0 0 35px 0;
+        flex-direction: column-reverse;
+    }
+
+    .page404v2-main-wrapper h1 {
+        font-size: 32px;
+        line-height: 100%;
+        padding: 0 10px 0 10px;
+    }
+
+    .page404v2-main-wrapper h2 {
+        font-size: 20px;
+        line-height: 100%;
+    }
+
+    .page404v2-main-wrapper h3 {
+        font-size : 20px;
+    }
+
+    .page404v2-main-wrapper .main-text-section {
+        gap: 15px;
+        padding: 10px 0 0 0;
+    }
+
+    .page404v2-main-wrapper .main-text-section:last-child {
+        gap: 7px;
+    }
+
+    .page404v2-main-wrapper .logos-list li:first-child::after {
+        top: 32px;
+    }
+
+}
+
+
+@media only screen and (max-width: 767px) { 
+    .cta-items-wrapper a {
+        padding: 15px;
+    }
+}

@@ -1,0 +1,334 @@
+.index-component {
+	margin: 50px 0;
+}
+
+.slidelist.tabs.tabs_controls {
+	background: transparent;
+	box-shadow: none;
+	border: 0;
+}
+
+.index-component .tabs .horizontal {
+	width: 100%;
+}
+
+.index-component .slidelist_letters ul li:before,
+.index-component .slidelist_letters ul li:after,
+.slidelist_indicate_bar {
+	display: none;
+}
+
+.index-component .slidelist_letters ul li {
+	margin: 0;
+}
+
+
+.index-component .tabs .horizontal ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+.index-component .slidelist_letters ul li,
+.tabs LI a {
+	border-color: transparent;
+	color: #061C3F !important;
+	font-weight: 600;
+	background: transparent;
+}
+
+.tabs LI.disabled {
+	background: transparent;
+	border: none;
+}
+
+.horizontal a {
+	color: #061C3F !important;
+}
+
+.tabs LI {
+	border: none;
+	background: transparent;
+}
+
+.index-component .slidelist_letters ul li.curr,
+.index-component .slidelist_letters ul li:hover:not(.none) {
+	background: #E1EFF8 !important;
+	border-radius: 4px;
+	border: 1px solid rgba(18, 57, 133, 0.20) !important;
+}
+
+.index-component .slidelist_letters ul li.none {
+	background: transparent;
+	cursor: default;
+	opacity: .4;
+}
+
+.titleDoctorsView {
+	font-family: OpenSansHebrew-Bold;
+}
+
+li.btnDoctorsView.ui-state-default.ui-corner-top.ui-tabs-active.ui-state-active .ui-tabs-anchor {
+	color: #00667D;
+	-webkit-text-fill-color: #00667D;
+	background: transparent;
+	border: none;
+	pointer-events: none;
+	text-decoration: none;
+	font-weight: 100;
+}
+
+li.btnDoctorsView.ui-state-default.ui-corner-top .ui-tabs-anchor {
+	color: #00667D;
+	-webkit-text-fill-color: #00667D;
+	text-decoration: underline;
+	border: none;
+	background: transparent;
+}
+
+li.btnDoctorsView:nth-of-type(1)::after {
+	content: "|";
+	display: inline-block;
+	position: relative;
+	top: 3px;
+	opacity: 0.3;
+}
+
+.slidelist_view_container {
+	background: #E1EFF8;
+	border: 1px solid rgba(18, 57, 133, 0.20);
+	border-radius: 8px 8px 0 0;
+	padding: 20px;
+	margin: 0;
+	width: 90%;
+}
+
+.slidelist_letters.horizontal {
+	margin-right: 0;
+	float: none;
+	width: 100%;
+	display: flex;
+}
+
+
+.slidelist_letters.horizontal ul {
+	float: none;
+	display: flex;
+	width: 90%;
+	justify-content: space-between;
+}
+
+.slidelist_letters.horizontal ul li:last-of-type {
+	margin: 0;
+}
+
+.slidelist_letters ul li.curr:after, .slidelist_letters ul li.curr:before {
+	display: none;
+}
+
+.slidelist_letters ul li.curr, .slidelist_letters ul li:focus, .slidelist_letters ul li:hover {
+	border-radius: 6px;
+	background: #e1eff8;
+	color: #123985;
+}
+
+.slidelist_letters ul li {
+	border-radius: 6px;
+}
+
+.slidelist_all_container dt h3 span {
+	color: #123985;
+	font-size: 18px;
+}
+
+.index_controller {
+	width: 90%;
+	background: #e1eff8;
+	border: 1px solid rgba(18, 57, 133, 0.20);
+	border-top: 0;
+	padding: 15px;
+	border-radius: 0 0 10px 8px;
+	display: flex;
+	align-items: center;
+	min-height: 80px;
+}
+	.index_controller .slidelist_arr, .index_controller .slidelist_arr.right {
+		position: static;
+		margin: 0;
+		background-size: 16px;
+		background-color: #fff;
+		border-radius: 100px;
+		height: 40px;
+		width: 40px;
+	}
+
+.index_arrows {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	gap: 30px;
+}
+p#describeSlider {
+	padding: 0;
+}
+.slidelist_view_container.clear {
+	height: fit-content !important;
+}
+
+.MedicalFieldOrder {
+	color: #123985 !important;
+}
+
+.ui-widget-content .slidelist_all_container dd a,
+.ui-widget-content .slidelist_all_container dd a:visited {
+	color: #00667D !important;
+}
+
+.slidelist_all_container dd a:active,
+.slidelist_all_container dd a:focus,
+.slidelist_all_container dd a:hover,
+.ui-widget-content .slidelist_all_container dd a:active,
+.ui-widget-content .slidelist_all_container dd a:focus,
+.ui-widget-content .slidelist_all_container dd a:hover {
+	color: #fff !important;
+	background-color: #00667D !important;
+	width: 100%;
+}
+
+
+.slidelist_arr {
+	background: url(./../../icons/arrow-down.svg);
+	background-size: contain;
+	transform: rotate(90deg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.slidelist_arr.right {
+	background: url(./../../icons/arrow-down.svg);
+	background-size: contain;
+	transform: rotate(-90deg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.index-component-mobile {
+	display: none;
+}
+
+@media only screen and (max-width:1024px) {
+	.index-component {
+		margin: 20px 0;
+	}
+
+	.tabs A.next,
+	.tabs A.prev {
+		display: none !important;
+	}
+
+	.index-component-desktop {
+		display: none;
+	}
+
+	.index-component-mobile {
+		display: block;
+	}
+
+	.index-component .tabs .horizontal ul {
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+
+	.tabs.tabs_controls.doctors,
+	.tabs.tabs_controls.doctors>DIV {
+		background: transparent !important;
+		box-shadow: none;
+		margin: 0;
+	}
+
+	.ward_name_wrapper ul li h5,
+	.ward_name_wrapper ul li h5 a {
+		color: #123985;
+	}
+
+	.ward_name_wrapper ul li h5 {
+		display: flex;
+		align-items: center;
+		padding: 33px;
+		line-height: 130%;
+	}
+
+	.ward_name_wrapper ul li {
+		background: #E1EFF8;
+		margin: 0;
+		width: 100%;
+		border: 1px solid rgba(18, 57, 133, 0.20);
+		border-bottom: 0;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	.ward_name_wrapper ul li:last-child {
+		border-bottom: 1px solid rgba(18, 57, 133, 0.20);
+		border-radius: 0 0 8px 8px;
+	}
+
+
+	.ward_name_wrapper ul li:first-child {
+		border-radius: 8px 8px 0 0;
+	}
+
+
+	.ward_name_wrapper ul li a.arrow::before {
+		background: url(./../../icons/arrow-down-accordion.svg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		transform: rotate(180deg);
+	}
+
+	.ward_name_wrapper ul li.open_ward_nameItem a.arrow::before {
+		background: url(./../../icons/arrow-down-accordion.svg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		transform: rotate(0deg);
+	}
+
+	.ward_name_wrapper ul li.open_ward_nameItem div.container {
+		background: #F1F7FA;
+		padding: 0;
+		width: 100%;
+		position: static;
+	}
+
+	li.open_ward_nameItem .container {
+		display: block;
+	}
+
+	.ward_name_wrapper ul li.open_ward_nameItem div.container p {
+		padding: 3% !important;
+		margin-bottom: 0 !important;
+		margin-top: 0 !important;
+		width: 100% !important;
+		background: #F1F7FA !important;
+		border-bottom: 1px solid rgba(18, 57, 133, 0.20);
+	}
+
+	.ward_name_wrapper ul li.open_ward_nameItem div.container p:first-of-type {
+		border-top: 1px solid rgba(18, 57, 133, 0.20);
+	}
+
+	.ward_name_wrapper ul li.open_ward_nameItem div.container p:last-of-type {
+		border-bottom: none;
+	}
+
+	.ui-tabs .tabsSelectIndexView.ui-tabs-nav {
+		margin: 0 0 20px;
+	}
+
+	.ward_name_wrapper ul li p a {
+		background-color: transparent;
+	}
+}

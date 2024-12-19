@@ -1,0 +1,170 @@
+.ms-webpart-cell-vertical {
+  display: flex!important;
+}
+
+.faq-page-content .section {
+  padding: 50px 0 0 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.faq-page-content .section.breadcrumb-section {
+padding:0;
+}
+
+
+.faq-page-content .section p {
+  font-family: OpenSansHebrew-Regular;
+  font-size: 18px;
+  color: #000000;
+  letter-spacing: 0;
+  margin: 0px 0 0px 0;
+  line-height: 26px;
+  gap: 10px;
+  display: flex;
+}
+
+.faq-page-content .section p, .faq-page-content .section p a {
+  width: auto;
+}
+
+.faq-page-content .section h2 {
+  font-family: OpenSansHebrew-Bold;
+  font-size: 32px;
+  color: #123985;
+  letter-spacing: 0;
+  line-height: 36px;
+  padding: 10px 0 10px 0;
+}
+
+.accordion-wrapper {
+  margin: 0px auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width : 100%;
+}
+
+.faq-question {
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: right;
+    position: relative;
+    right: -5px;
+    outline: none;
+    transition: 0.4s;
+    font-size: 18px;
+    background: #e6f2fa;
+    display: flex;
+    align-items: center; 
+  }
+
+  .faq-question:first-child {
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+  }
+
+  .faq-question:last-child {
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+  }
+
+
+  .faq-question p {
+    font-size: 18px;
+  }
+
+
+  .active-indicator, 
+  .faq-question:hover,
+  .faq-question:active,
+  .faq-question:focus
+  {
+    background: #e6f2fa;
+  }
+  
+  
+  .faq-question:before {
+  
+    content: '\002B';
+    color: #4E8FC1;
+    font-weight: bold;
+    float: left;
+    margin-left: 15px;
+    border-radius: 50%;
+    border: 2px solid;
+    min-height: 20px;
+    min-width: 20px;
+    text-align: center;
+    line-height: 0.83;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .active-indicator:before {
+    content: "\2212";
+  }
+  
+  .faq-answer {
+    padding: 0 18px;
+    background: #e6f2fa;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    position: relative;
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .faq-answer div {
+   padding: 20px 40px 20px 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+   background: hsl(0 0% 98% / 1);
+   border-radius: 5px;
+  }
+
+
+  @media only screen and (max-width: 1024px) {
+
+    .faq-page-wrapper .hospitals-categories {
+      margin: 30px auto 20px;
+    }
+    
+
+    .faq-page-wrapper {
+      gap: initial;
+    }
+
+    .accordion-wrapper{
+      margin: 35px auto;
+    }
+   
+
+    .faq-question, .faq-answer, .faq-answer div p {
+      font-size: 16px!important;
+    }
+
+    .faq-page-content {
+      margin: auto;
+      width: 90%;
+  }
+
+  .faq-page-content .section {
+    padding: 0;
+    width: 92%;
+    margin: auto;
+}
+
+.faq-page-content .section h2 {
+  font-size: 22px;
+  padding: 10px 0 0px 0;
+}
+
+  }

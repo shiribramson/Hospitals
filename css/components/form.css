@@ -1,0 +1,72 @@
+.form-container.bg-blue-xlight {
+	margin: 50px 0;
+	border-radius: 4px;
+	background: rgba(255, 255, 255, 0.95) !important;
+}
+
+.form-container label.fld-label.fld-label-up {
+	color: var(--color-3);
+	font-size: 16px;
+}
+
+.rtl .form-control,
+.form-control,
+input[type=text].form-control,
+input[type=number].form-control,
+input[type=email].form-control,
+input[type=password].form-control,
+textarea.form-control,
+[type=password],
+.custom-select {
+	border: 1px solid var(--color-3) !important;
+	border-radius: 6px;
+}
+
+.rtl .multiselect-native-select .btn-group button.multiselect:after,
+.rtl .multiselect-form-group .btn-group button.multiselect:after {
+	left: 10px;
+	background: url(../../icons/arrow-down.svg);
+	border: none;
+	height: 5px;
+	width: 9px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.form-container .btn-secondary,
+.btn-secondary,
+.btn-secondary:visited,
+.btn-secondary:hover,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.btn-secondary:not(:disabled):not(.disabled).active,
+.show>.btn-secondary.dropdown-toggle,
+.btn-secondary[type=submit] {
+	max-width: 200px;
+	background-color: var(--color-3);
+	border-color: var(--color-3);
+	border-radius: 24px;
+}
+
+.form-container .btn-secondary:hover,
+.form-container .btn-secondary:visited {
+	background-color: var(--color-3);
+	opacity: .85;
+}
+
+.form-footer {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: space-between;
+}
+
+@media only screen and (max-width:960px) {
+	.form-container .btn-secondary {
+		max-width: 100%;
+	}
+
+	.form-footer {
+		display: block;
+
+	}
+}

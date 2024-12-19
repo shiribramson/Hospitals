@@ -1,0 +1,38 @@
+/* Fonts */
+
+@font-face {
+	font-family: OpenSansHebrew-Regular;
+	src: url(../../fonts/OpenSansHebrew-Regular.ttf);
+}
+
+@font-face {
+	font-family: OpenSansHebrew-Bold;
+	src: url(../../fonts/OpenSansHebrew-Bold.ttf);
+}
+
+@font-face {
+	font-family: OpenSansHebrew-ExtraBold;
+	src: url(../../fonts/OpenSansHebrew-ExtraBold.ttf);
+}
+
+@font-face {
+	font-family: OpenSans-Regular;
+	src: url(../../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+	font-family: Ploni-Regular;
+	src: url(../../fonts/PloniRegular.otf);
+}
+
+@font-face {
+	font-family: Ploni-Medium;
+	src: url(../../fonts/PloniMedium.otf);
+}
+
+@font-face {
+	font-family: Ploni-Bold;
+	src: url(../../fonts/PloniBold.otf);
+}
+
+/* Fonts */

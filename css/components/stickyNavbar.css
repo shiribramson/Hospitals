@@ -1,0 +1,9 @@
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 -4px 24px 0 rgba(45,93,188,0.19);
+    background: #ffffff;
+    box-shadow: inset 0px 20px 20px -10px rgba(45,93,188,0.2);
+    z-index:999;
+  }

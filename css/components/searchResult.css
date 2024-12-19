@@ -1,0 +1,130 @@
+div#loading {
+    background: url(/_layouts/15/Hospitals/NewDesign/images/loaderr/ajax-loader.gif) no-repeat 50% 50%;
+    display: block;
+    z-index: 1000;
+    cursor: wait;
+    width: 100px;
+    height: 150px;
+    margin: auto;
+    text-align: center;
+}
+
+.search-result-items {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.search-result-btn-items-wrapper {
+justify-content: flex-start;
+gap: 10px;
+}
+
+
+.search-result-btns-item{
+  background: #FFFFFF;
+  box-shadow: 0 5px 24px 0 rgba(17,43,85,0.10);
+  font-family: OpenSansHebrew-Bold;
+  color: #123985;
+  border-radius: 4px;
+  max-width: 100%;
+  min-height: 56px;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px 10px 5px;
+  gap: 2px; 
+}
+
+a.btn-text
+{
+display: flex;
+gap: 5px;
+justify-content: center;
+align-items: self-end;
+}
+
+a.btn-text div {
+font-size: 16px;
+}
+
+a.btn-text
+a.btn-text:hover,
+a.btn-text:active,
+a.btn-text:focus,
+a.btn-text:visited
+{
+color: #123985;
+}
+
+.main-box-info-title a,
+.main-box-info-title a:hover,
+.main-box-info-title a:active,
+.main-box-info-title a:focus,
+.main-box-info-title a:visited
+{
+color: #00667D;
+}
+
+
+img.search-box-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.search-result-title a{
+  font-family: OpenSansHebrew-Regular;
+  font-size: 22px;
+  color: #00667D; 
+  text-decoration: underline;
+}
+
+.search-result-info{
+  font-family: OpenSansHebrew-Regular;
+  font-size: 18px;
+  color: #000000;
+}
+
+.search-result-items span {
+  font-family: OpenSansHebrew-Regular;  
+}
+
+#load{display: none;}
+
+@media only screen and (max-width: 1024px) {
+  .section a.btn-text {
+    font-size: 14px;
+}
+
+a.btn-text{
+  gap: 1px;
+}
+
+a.btn-text div{
+  font-size:14px;
+}
+
+.search-result-btn-items-wrapper {
+  padding: 0 22px 0 0;
+}
+
+
+#load{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #00667D;
+  gap: 10px;
+  font-size: 16px;
+  padding: 15px 5px 5px 5px;
+  cursor: pointer;
+}
+
+.load-more-item {
+  display: none;
+}
+
+}

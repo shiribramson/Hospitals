@@ -1,0 +1,229 @@
+/* Unit Page */
+
+/* Section  */
+.unit-page-content > .section {
+    padding: 15px 0 0 50px;
+}
+
+.unit-page-content > .breadcrumb-section {
+    padding: 0;
+}
+
+.unit-page-content .section p {
+    font-family: OpenSansHebrew-Regular;
+    font-size: 18px;
+    color: #000000;
+    letter-spacing: 0;
+    font-weight: 400;
+    margin: 0px 0 15px 0;
+    line-height: 26px;
+}
+
+.unit-page-content .section p.bold-text {
+    font-family: OpenSansHebrew-Bold;
+    margin: 15px 0 15px 0;
+}
+
+.unit-page-content .section p.manager-title {
+    margin: -10px 0 0 0;
+}
+
+
+    .unit-page-content .section p.title,
+    .unit-page-content .section h2,
+    .unit-page-content h2
+    {
+        font-family: OpenSansHebrew-Bold;
+        font-size: 22px;
+        color: #123985;
+        letter-spacing: 0;
+        line-height: 32px;
+    }
+
+    .section h2.title {
+        padding: 10px 0 10px 0;
+    }
+
+    .unit-page-content .section h2.main-title {
+        font-size: 32px;
+        padding: 20px 0 20px 0;
+    }
+
+.unit-page-content .section p.p-section-bold-tight {
+    font-family: OpenSansHebrew-Bold;
+    margin: 0;
+}
+
+.unit-page-content .section p.p-section-bold {
+    font-family: OpenSansHebrew-Bold;
+    margin: 12px 0 0 0;
+}
+
+    .unit-page-content .section p.p-section-bold:first-of-type {
+        margin: 0;
+    }
+
+.unit-page-content .section p.p-section-tight {
+    margin: 5px 0 0 0;
+}
+
+    .unit-page-content .section p.p-section-bold-tight a,
+    .unit-page-content .section p.p-section-bold a,
+    .unit-page-content .section p.p-section-tight a {
+        color: #00667D;
+        text-decoration: underline;
+    }
+
+.unit-page-content p span.number {
+    font-family: OpenSansHebrew-Bold;
+}
+
+/* Section  */
+
+
+/* Boxes Numbers */
+.unit-page-content .numeric-number {
+    background: var(--color-2);
+}
+/* Boxes Numbers */
+
+
+/* Table */
+.table-wrapper {
+    margin-inline: auto;
+    border-bottom: 1px solid #E3E7F0;
+    padding-bottom: 50px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0 0 0;
+}
+
+    .table td,
+    .table th {
+        padding: 1rem 0.8rem;
+        text-align: center;
+        font-size: 16px;
+        color: hsl(0 0% 0% / 1);
+        border: 1px solid rgba(0,102,125,0.30);
+        vertical-align: middle;
+        direction: ltr;
+    }
+
+table td p.invite-phone {
+    margin: 0 !important;
+    font-size: 16px !important;
+}
+
+.table th {
+    background-color: var(--color-2);
+    font-family: OpenSansHebrew-Bold;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: right;
+    border: 1px solid rgba(255,255,255,0.30);
+}
+
+    .table th:first-child {
+        border-radius: 0 8px 0 0;
+    }
+
+    .table th:last-child {
+        border-radius: 8px 0 0 0;
+    }
+
+.multiple-phone-row {
+    margin: 20px 0 0 0;
+}
+/* Table */
+
+
+/* Side Navbar */
+
+/* Side Navbar */
+.padding-top-20 {
+    padding-top: 20px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .unit-page-wrapper .hospitals-categories {
+        margin: 30px auto 20px;
+    }
+
+    .unit-page-content {
+        margin: auto;
+        width: 100%;
+    }
+
+        .unit-page-content .section {
+            padding: 0;
+            width: 90%;
+            margin: auto;
+        }
+
+        .unit-page-content .cta-btns p.title {
+            padding: 0px 0 25px 0;
+        }
+
+    .padding-top-20 {
+        padding-top: 20px;
+    }
+
+
+    .bottom-tags-wrapper {
+        border-top: none;
+    }
+
+    .padding-top-20-mobile {
+        padding-top: 20px;
+    }
+
+    .unit-page-content .section h2.title {
+        margin: 30px 0px 0px;
+        padding: 10px 0 10px 0;
+    }
+
+    .unit-page-content .section h2.main-title {
+        font-size: 24px;
+        padding: 0px 0 10px 0;
+    }
+
+
+    .unit-page-content .section p.manager-title {
+        margin: 2px 0 15px 0;
+        color: #616161;
+        font-size: 16px;
+    }
+
+    .box-info-title {
+        padding: 30px 0 45px 0;
+    }
+
+
+    .border-bottom-mobile {
+        border-bottom: 1px solid #E3E7F0;
+        padding: 0 0 48px 0 !important;
+    }
+
+    .table th {
+        display: none;
+    }
+
+    .table td {
+        display: grid;
+        grid-template-columns: 15ch auto;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+
+        .table td::before {
+            content: attr(data-label) ": ";
+            font-weight: 700;
+        }
+}
+
+/* Unit Page */

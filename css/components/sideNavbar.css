@@ -1,0 +1,431 @@
+/* SideNavbar */
+
+.side-navbar.navbar-empty,
+.side-navbar:empty
+{
+background: transparent;
+}
+
+
+.side-navbar {
+  background: var(--color-4);
+  border-radius: 4px;
+  margin: 35px 0 0 0;
+  height: auto;
+}
+
+.unit-page-wrapper .side-navbar {
+  height: -webkit-fill-available;
+}
+
+
+.lobby-page-wrapper .side-navbar {
+  margin: 0 0 0 0;
+  height: auto;
+}
+
+.lobby-page-wrapper .btn-side-navbar-items p.info-paragraph a {
+  color: #061C3F;
+}
+
+
+.search-result-page-wrapper .side-navbar {
+  height: -webkit-fill-available;
+}
+.search-result-page-wrapper .side-navbar .side-navbar-item-wrapper::after {
+  display: none;
+}
+
+
+.faq-page-wrapper .side-navbar {
+  height: -webkit-fill-available;
+}
+
+
+.btn-side-navbar-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    padding: 0 6% 6% 6%;
+}
+
+
+.btn-side-navbar-items.btn-items {
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0 35px 0;
+}
+
+
+.info-section-area-a .column-wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.info-section-area-a p.info-title {
+  font-family: OpenSansHebrew-Bold;
+  font-size: 15px;
+  color: #061C3F;
+  letter-spacing: 0;
+  line-height: 26px;
+}
+
+.info-section-area-a p.text-info {
+  font-family: OpenSansHebrew-Regular;
+  font-size: 14px;
+  color: #061C3F;
+  letter-spacing: 0;
+  line-height: 26px;
+}
+
+.flex-column-text-info-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.div-info-wrapper {
+  margin-top: -10px;
+}
+
+.column-wrapper{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.column-page
+{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+
+.column-page ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.column-page ul li a {
+  font-size: 16px;
+  display: inline-block;
+  align-items: baseline;
+  padding-right: 15px;
+  color: #00667D;
+}
+
+
+.row-lobby-page {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+} 
+
+.inner-column {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+}
+
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.btn-side-navbar-items p.location-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn-side-navbar-items .main-title {
+  font-family: OpenSansHebrew-Bold;
+  font-size: 19px;
+  color: #061C3F;
+  letter-spacing: 0;
+  line-height: 26px;
+  padding: 30px 0 10px 0;
+}
+
+.btn-side-navbar-items p.info-paragraph
+{
+  font-family: OpenSansHebrew-Regular;
+  font-size: 16px;
+  color: #061C3F;
+  letter-spacing: 0;
+  line-height: 1.4;
+  align-items: baseline;
+}
+
+
+p.d-flex img.lobby-nav-social-icon {
+  width: 25px;
+}
+
+
+p.btn-paragraph {
+  background: #123985;
+  border: 1px solid #123985;
+  border-radius: 20px;
+  padding: 5px 2px 5px 2px;
+  width: 90%;
+  margin: 20px auto;
+}
+
+
+.btn-side-navbar-items p.info-paragraph a {
+    font-size: 16px;
+}
+
+
+p.btn-paragraph a {
+  font-family: OpenSansHebrew-Regular;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 26px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  padding:2px;
+  gap: 5px;
+}
+
+
+.info-section-area-a p.line-height-0 {
+  line-height: 0.5;
+}
+
+p.info-paragraph a {
+    color: #00667D;
+    text-decoration: underline;
+  }
+
+p.d-flex {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 5px;
+}
+
+.column-page p.d-flex img
+{
+  width: 12px
+}
+
+.unit-page-wrapper p.d-flex img {
+  width: 16px;
+}
+
+  p.d-flex a{
+    text-decoration: none;
+  }
+  
+p.d-flex img{
+  width: 20px
+}
+
+img.banner-img{
+  width: 200px;
+  height: 70px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+
+.info-section p.line-height-1 {
+  line-height: 1.5;
+}
+
+p.btn-paragraph a img{
+margin: 0 0 0 5px;
+}
+
+a.side-navbar-item-link{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.btn-side-navbar-item{
+  background: #FFFFFF;
+  border: 1px solid #CCEFFC;
+  box-shadow: 0 5px 24px 0 rgba(17,43,85,0.10);
+  border-radius: 8px;
+  height: 86px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: OpenSansHebrew-Bold;
+  font-size: 18px;
+  color: #061C3F;
+  letter-spacing: 0;
+  line-height: 22px;
+  width: 90%; 
+}
+
+.btn-side-navbar-item a span {
+  font-size:18px;
+}
+
+.btn-side-navbar-items a.side-navbar-item-link .btn-side-navbar-item div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    right: 32px;
+}
+
+.side-navbar-item-wrapper::after{
+    content: "";
+    width: 92%;
+    height: 0.05rem;
+    background: var(--color-7);
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    margin: auto;
+    opacity: 0.7;
+}
+
+.after-none::after {
+  content: "";
+  width: 0;
+  height: 0;
+}
+
+  .banner-item p.main-title{
+    padding: 35px 0 10px 0;
+  }
+
+  .box-banne-item {
+    background: #FFFFFF;
+    border: 1px solid #CCEFFC;
+    box-shadow: 0 5px 24px 0 rgba(17,43,85,0.10);
+    border-radius: 8px;
+    height: 150px;
+    width: 100%;
+    gap: 15px;
+}
+
+
+  a.text-link {
+    color: #00667D;
+    text-decoration: underline;
+  }
+
+
+  .side-navbar-item-wrapper:not(:last-child):after {
+    margin-top: 10px;
+  }
+  
+
+.side-navbar-item-wrapper:last-child:after {
+  content: "";
+  width: 0;
+  height: 0;
+}
+
+.navbar-item{
+    display: flex;
+    gap: 8px; 
+}
+
+
+
+/*miki fixes for rte*/
+.side-navbar .side-navbar-item-wrapper .ms-rtestate-field img{
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 5px 0 !important;
+    float: none;
+
+}
+ 
+.side-navbar .side-navbar-item-wrapper .ms-rtestate-field p,
+.side-navbar .side-navbar-item-wrapper .left_fishhook p{
+    font-family: OpenSansHebrew-Regular;
+    font-size: 16px;
+    color: #061C3F;
+    letter-spacing: 0;
+    line-height: 1.4;
+    align-items: baseline;
+}
+
+.side-navbar .side-navbar-item-wrapper .left_fishhook h2,
+.side-navbar .side-navbar-item-wrapper .ms-webpart-cell-vertical h2 
+{
+    font-family: OpenSansHebrew-Bold;
+    font-size: 19px;
+    color: #061C3F;
+    letter-spacing: 0;
+    line-height: 26px;
+    padding: 30px 0 10px 0;
+}
+
+
+
+.side-navbar .side-navbar-item-wrapper .left_fishhook p a,
+.side-navbar .side-navbar-item-wrapper ul li a, 
+.column-page ul li a
+{
+    color: #00667D;
+    border-style: none;
+    border-color: inherit;
+    border-width: 0;
+    vertical-align: top;
+    background-image: url(/_layouts/15/Hospitals/images/Arrow-green.svg);
+    background-repeat: no-repeat;
+    background-position: top 6px right;
+    padding-right: 18px;
+    padding-left: 0px;
+    background-size: 12px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+
+.side-navbar-item-wrapper .ms-webpart-zone .ms-webpart-cell-vertical:not(:last-child)::after {
+  content: "";
+  width: 104%;
+  height: 0.05rem;
+  background: var(--color-7);
+  justify-content: center;
+  align-items: center;
+  display: block;
+  margin: 20px -2% 0 -2%;
+  opacity: 0.7;
+}
+/*miki fixes for rte*/
+
+@media only screen and (max-width: 1024px) {
+    .side-navbar  {
+        border-radius: 4px;
+    }
+
+    .lobby-page-wrapper .side-navbar {
+      margin: 20px 0 0 0;
+    } 
+
+    .unit-page-wrapper .side-navbar{
+      width: 83%;
+      margin: 40px auto;
+      height: auto;
+    }
+}
+
+/* SideNavbar */

@@ -1,0 +1,207 @@
+/* Lobby Page */
+
+.grid-row.lobby-page-inner-wrapper {
+   justify-content: space-between;
+}
+
+.lobby-wrapper{
+   padding: 0 0 0 40px;
+}
+
+.lobby-articles-wrapper{
+   margin: 40px 0 0 0;
+}
+
+.container.lobby-page #news-carousel .news-main-img{
+height: 117px;
+}
+
+
+.column-lobby-page p.d-flex img.lobby-nav-social-icon {
+   width: 24px;
+}
+
+.column-lobby-page .banner-wrapper{
+  position: relative;
+}
+
+.banner-title-wrapper {
+    position: absolute;
+    bottom: 15px;
+}
+
+a.social-info-title {
+   color: #061C3F;
+   font-family: OpenSansHebrew-Bold;
+}
+
+a.social-info-link{
+   color: #00667D; 
+   padding-right: 0!important;
+}
+
+li.social-info-li{
+   display: flex;
+   gap: 7px;
+}
+
+.social-info-list {
+   display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+}
+
+li.social-info-li:not(:last-child):after {
+   content: '';
+   width: 1px;
+   height: 18px;
+   background: rgba(0,102,125,0.25);
+   top: 2px;
+   position: relative;
+}
+
+.social-info-column-wrapper{
+   margin: 10px 0 0 0; 
+}
+
+.lobby-page-content .section {
+   padding: 15px 0 0 50px;
+}
+
+.lobby-page-content .section.breadcrumb-section {
+   padding: 0;
+}
+
+
+/* articles in lobby page */
+.lobby-page-content .section.articles-list-section {
+   padding: 0px 0 0 0px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.lobby-page-content .section h2.article-list-title {
+   font-family: OpenSansHebrew-Bold;
+   font-size: 32px;
+   color: #123985;
+   letter-spacing: 0;
+   line-height: 36px;
+   padding: 20px 0 20px 0;
+}
+
+/* articles in lobby page */
+
+
+/* text section in lobby page */
+.lobby-page-content .section h2.main-title {
+   font-size: 32px;
+   padding: 20px 0 20px 0;
+   font-family: OpenSansHebrew-Bold;
+   color: #123985;
+   line-height: 32px;
+}
+
+.lobby-page-content .section p {
+   font-family: OpenSansHebrew-Regular;
+   font-size: 18px;
+   color: #000000;
+   letter-spacing: 0;
+   font-weight: 400;
+   margin: 0px 0 15px 0;
+   line-height: 26px;
+}
+
+.lobby-page-content .section p.manager-title {
+   margin: -10px 0 0 0;
+}
+
+.lobby-page-content .section p.bold-text {
+   font-family: OpenSansHebrew-Bold;
+   margin: 15px 0 15px 0;
+}
+/* text section in lobby page */
+
+
+@media only screen and (max-width: 1024px) {
+   .lobby-page-wrapper .hospitals-categories {
+      margin: 30px auto 20px;
+  }
+
+
+.grid-row.lobby-page-inner-wrapper {
+   justify-content: center;
+   width: 92%;
+   margin: auto;
+   flex-direction: column-reverse;
+   row-gap: 0;
+   align-items: center;
+  }
+
+
+.grid-row.lobby-page-inner-wrapper ul.breadcrumb{
+    margin: inherit;
+   }
+
+
+.lobby-articles-wrapper {
+   margin: 10px 0 0 0;
+}
+
+
+.lobby-wrapper{
+   padding: 0;
+}
+
+.lobby-articles-wrapper{
+   margin: 45px 0 0 0;
+}
+
+.cta-btn-items-wrapper {
+   padding: 15px;
+}
+
+/* articles in lobby page */
+.lobby-page-content .section {
+   padding: 0;
+   width: 100%;
+   margin: auto;
+}
+
+.lobby-page-content .section p.manager-title {
+margin: 2px 0 15px 0;
+color: #616161;
+font-size: 16px;
+}
+
+.lobby-page-content .section h2.main-title {
+   font-size: 24px;
+   padding: 30px 0 10px 0;
+}
+
+.lobby-page-content .section h2.article-list-title{
+   font-size: 24px;
+}
+
+.lobby-page-content .section.articles-list-section {
+   padding: 0;
+   width: 100%;
+   margin: auto;
+}
+/* articles in lobby page */
+
+.lobby-page-content .section.breadcrumb-section{
+   width: 90%;
+}
+
+.lobby-page-content img {
+   max-width: 100%;
+}
+
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+/* Lobby Page */

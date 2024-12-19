@@ -1,0 +1,107 @@
+.toc-layout-main {
+    height: auto;
+}
+
+.toc-layout-main {
+    padding: 0 30px;
+}
+
+
+.level-header {
+    padding: 5px 0px 5px 0px;
+}
+
+ul.dfwp-list{
+    margin: 10px 0 10px 0;
+}
+
+.headertitle, .headertitle a, .headertitle a:link {
+    color: #00667D;
+    font-size: 16px;
+    font-family: OpenSansHebrew-Regular;
+}
+
+.headertitle, .headertitle a, .headertitle a:link {
+    color: #00667D;
+    font-size: 16px;
+    font-family: OpenSansHebrew-Regular;
+}
+
+.level-section {
+    margin-bottom: 6px;
+    clear: both;
+}
+
+.sitemap-title .sitemap-title a, .sitemap-title a:link{
+    font-family: OpenSansHebrew-Bold;
+    font-size: 19px;
+    color: #061C3F;
+}
+
+.level-bullet {
+    border-style: none;
+    border-color: inherit;
+    border-width: 0;
+    vertical-align: top;
+    background-image: url(/../images/icons/Arrow-green.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 18px;
+    padding-left: 0px;
+    background-size: 12px;
+}
+
+.level-section>ul>li {
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+
+.sitemap-page-content .section h2 {
+    font-family: OpenSansHebrew-Bold;
+    font-size: 32px;
+    color: #123985;
+    letter-spacing: 0;
+    line-height: 36px;
+    padding: 40px 0 10px 0;
+}
+
+
+.sitemap-page-content .section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sitemap-page-content .section.breadcrumb-section {
+   padding:0;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .sitemap-page-content{
+     width: 90%;
+     margin: auto;
+    }
+
+    .toc-layout-main{
+        margin: 20px 0 0 0;
+    }
+
+    .sitemap-page-content .section h2 {
+        font-size: 22px;
+        padding: 10px 0 0px 0;
+    }
+
+    .sitemap-page-content .section {
+        padding: 0;
+        width: 92%;
+        margin: auto;
+    }
+
+    .sitemap-page-wrapper .hospitals-categories {
+        margin: 30px auto 20px;
+    }
+
+
+}

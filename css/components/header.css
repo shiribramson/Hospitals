@@ -1,0 +1,282 @@
+/* Header */
+
+/* lang */
+header ul li ul.dropdown {
+	background: #FFFFFF;
+	box-shadow: 0 4px 24px 0 rgba(45, 93, 188, 0.19);
+	border-radius: 12px;
+	z-index: 999;
+	position: absolute;
+	padding: 3px 0 7px 0;
+}
+
+header ul.dropdown li {
+	width: 90%;
+	margin: 10px;
+}
+
+header ul li ul.dropdown a {
+	font-size: 18px;
+	color: var(--color-1);
+	letter-spacing: 0;
+	text-align: center;
+	line-height: 0;
+}
+
+
+ul.lang-dropdown-menu ul.dropdown li {
+	padding: 15px 20px 13px 20px;
+	list-style: none;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	font-family: OpenSans-Regular;
+}
+
+ul.lang-dropdown-menu li ul.dropdown a {
+	color: #00667D;
+}
+
+div.lang ul.lang-dropdown-menu {
+	list-style: none;
+	padding: 24px 0 0 0;
+}
+
+div.lang ul.lang-dropdown-menu li {
+	position: relative;
+}
+
+div.lang ul.lang-dropdown-menu li.lang-li:not(:last-child):after {
+	content: '';
+	width: 82%;
+	height: 1px;
+	background: #D9D9D9;
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: -40%;
+	margin: auto;
+}
+
+.navbar ul.lang-dropdown-menu li a span {
+	display: inherit;
+}
+
+ .lang-dropdown-menu .arrow {
+	vertical-align: bottom;
+}
+
+img.lang-icon {
+	width: 25px;
+	height: 25px;
+	object-fit: contain;
+}
+
+img.checked-icon {
+	display: none;
+	padding: 0 0 0 20px;
+	position: absolute;
+	right: 5px;
+	top: 11px;
+}
+
+.block {
+	display: block !important;
+}
+
+ul.lang-dropdown-menu li a {
+	text-decoration: none;
+}
+
+ul.lang-dropdown-menu ul {
+	padding-inline-start: 0;
+	margin: 13px -69px auto;
+	border-radius: 4px;
+}
+
+ul.lang-dropdown-menu li a span {
+	padding: 0 0 0 10px;
+	position: relative;
+	top: -7px;
+	right: 2px;
+}
+
+.navbar ul.dropdown li.lang-li {
+	display: flex;
+	width: 83%;
+}
+
+.navbar ul.lang-dropdown-menu li ul.dropdown a {
+	color: #00667D;
+}
+
+.navbar ul li ul.dropdown li.lang-li a:hover {
+	background: none;
+}
+
+.navbar ul.lang-dropdown-menu li:focus-within:after {
+	display: none;
+}
+
+  ul.lang-dropdown-menu ul {
+  width: 127px;
+  flex-direction: column;
+  position: absolute;
+  display: none;
+  }
+/* lang */
+
+
+/* btn to online */
+button.to-online-btn,
+button.to-online-btn:hover {
+	background: #00667d;
+	color: white;
+	font-size: 18px;
+	border-top-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+	margin: 0 0 0 -5px;
+	border: none;
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 9;
+	cursor: pointer;
+	font-family: OpenSansHebrew-Bold;
+	gap: 4px;
+}
+
+button.to-online-btn span {
+	line-height: 1.1;
+}
+
+span.sub-title {
+	font-size: 14px;
+	font-family: OpenSansHebrew-Regular;
+}
+/* btn to online */
+
+
+/* header logos */
+.logos-wrapper ul {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	list-style: none;
+	margin: 0;
+	min-height: 50px;
+	object-fit: contain;
+}
+
+.logos-wrapper ul li {
+	position: relative;
+}
+
+.header-logo-wrapper ul li.line-before::before {
+	content: '';
+	width: 1px;
+	height: 40px;
+	background: #D9D9D9;
+	position: absolute;
+	bottom: 18%;
+	margin: auto;
+}
+/* header logos */
+
+
+/* lang li */
+.lang-li img {
+	display: none;
+}
+
+.block-icon img {
+	display: block;
+}
+
+.block-icon img {
+	position: absolute;
+	top: 10px;
+	right: 5px;
+}
+/* lang li */
+
+
+@media only screen and (max-width:1024px) {
+	.top-header {
+		padding: 0;
+	}
+
+	header .logo-1 {
+		width: 100px;
+		height: auto;
+		max-width: 100%;
+	}
+
+	header .logo-2 {
+		width: 50px;
+		height: auto;
+		max-width: 100%;
+	}
+
+	header .logo-3 {
+		width: 90px;
+		padding: 12px 10px 0 12px;
+		height: auto;
+		max-width: 100%;
+	}
+
+	header {
+        display: flex;
+		padding: 0;
+		height: auto;
+		position: relative;
+		flex-direction: column-reverse;
+	}
+
+	header .menu-bar {
+		display: initial;
+		padding: 18px 20px 15px 20px;
+		height: 58px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.header-logo-wrapper ul li.line-before::before {
+		bottom: 15%;
+	}
+
+	ul.lang-dropdown-menu span img.arrow {
+		display: none;
+	}
+
+	ul.lang-dropdown-menu ul {
+		margin: 5px -90px auto;
+	}
+
+	img.lang-icon {
+		width: 22px;
+		height: 22px;
+	}
+
+	div.lang ul.lang-dropdown-menu {
+		padding: 0px 0 0 0;
+	}
+
+	button.to-online-btn,
+	button.to-online-btn:hover {
+		width: 100%;
+		height: 80px;
+		margin: 0;
+		font-size: 16px;
+		min-width: 95px;
+	}
+
+	button.to-online-btn img span {
+		width: 25px;
+	}
+}
+
+/* Header */

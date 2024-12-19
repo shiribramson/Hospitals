@@ -1,0 +1,223 @@
+/* Private Area Popup */
+
+.private-area-popup {
+	display: none;
+	position: absolute;
+	width: 360px;
+	left: 1%;
+	top: 85px;
+	background: #FFFFFF;
+	box-shadow: 0 4px 24px 0 rgba(45, 93, 188, 0.19);
+	border-radius: 0 30px 30px 30px;
+	z-index: 99999;
+}
+
+.private-area-popup-wrapper {
+	flex: 1;
+	padding: 2px 2px 10px 2px;
+}
+
+.private-area-popup-wrapper .grid-row {
+	justify-content: space-evenly;
+}
+
+.private-area-popup-wrapper a {
+	padding: 5.5px 0 5.5px 0;
+	background: #FFFFFF;
+	border: 1px solid rgba(18, 57, 133, 0.30);
+	box-shadow: 0 4px 24px 0 rgba(45, 93, 188, 0.08);
+	border-radius: 10px;
+	width: 100%;
+	min-width: 100%;
+	margin: 10px 0 0 0;
+	color: #123985;
+	font-size: 90%;
+	cursor: pointer;
+	position: relative;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.private-area-popup-wrapper a p {
+	text-align: center;
+	font-size: 14px;
+}
+
+.private-area-popup-wrapper a:hover,
+.private-area-popup-wrapper a:active,
+.private-area-popup-wrapper a:focus {
+	text-decoration: none;
+}
+
+.private-area-popup-wrapper a.login-private-area-button {
+	background: #00667D;
+	color: #ffffff;
+	width: 92%;
+	min-width: 92%;
+	font-family: OpenSansHebrew-Bold;
+	border-radius: 15px;
+	padding: 0;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.private-area-popup-wrapper a.login-private-area-button p a{
+	font-size: 18px;
+}
+
+.private-area-popup-wrapper a.login-private-area-button a {
+	color: #ffffff;
+}
+
+.private-area-popup-wrapper a.hospitals-button {
+	border: none;
+	background: no-repeat;
+	box-shadow: none;
+	padding: 0;
+	height: 35px;
+}
+
+
+.private-area-popup-wrapper a.hospitals-button {
+	border: none;
+	background: no-repeat;
+	box-shadow: none;
+	padding: 0;
+	height: 35px;
+}
+
+.private-area-popup-wrapper a.hospitals-button label {
+	color: #123985;
+	font-size: 18px;
+	font-family: OpenSansHebrew-Bold;
+}
+
+.private-area-popup-wrapper a.hospitals-button a {
+	color: #123985;
+	font-size: 16px;
+	font-family: OpenSansHebrew-Bold;
+}
+
+.private-area-popup-wrapper a.hospitals-button span{
+	color: #123985;
+	font-size: 16px;
+	font-family: OpenSansHebrew-Bold;
+}
+
+.private-area-popup-wrapper a.disabled-button {
+	background: #6b6b6b36;
+	color: #6B6B6B;
+	border: none;
+	opacity: 0.55;
+	padding: 5px 5px 5px 0;
+}
+
+
+.private-area-popup-wrapper a.disabled-button p {
+	padding: 0 10px 0 0;
+	line-height:110%;
+}
+
+.private-area-popup-wrapper a.disabled-button a {
+	color: #6B6B6B;
+}
+
+.visibility-hidden {
+	display: none;
+}
+
+a.members-true p {
+	position: relative;
+	top: 2px;
+}
+
+
+.members-true span.members {
+	display: flex;
+	font-size: 12px;
+	justify-content: center;
+	align-items: center;
+}
+
+span.members {
+	display: none;
+	background: #E9EFFC;
+	border-radius: 0 0 4px 4px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	width: 81px;
+	padding: 1px;
+}
+
+.private-area-popup-wrapper a.members-true p {
+	padding: 3px 0 0 0;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+	.private-area-popup {
+		width: 90%;
+		left: 0;
+		margin: 0 auto;
+		justify-content: space-between;
+		align-items: center;
+		right: 0%;
+		position: fixed;
+		overflow-y: auto;
+		bottom: 0;
+		align-items: flex-start;
+		background: transparent;
+	}
+
+	.private-area-popup-wrapper {
+		padding: 4px 2px 15px 2px;
+   		 background: #fff;
+    	border-radius: 0 30px 30px 30px;
+	}
+
+	.private-area-popup-wrapper a {
+		font-size: 16px;
+	}
+
+	.private-area-popup-wrapper a p {
+		max-width: 120px;
+		text-align: center;
+		margin: auto;
+	}
+
+	.private-area-popup-wrapper a.disabled-button p {
+		padding: 0;
+	}
+
+	.private-area-popup-wrapper a.login-private-area-button {
+		min-height: 70px;
+		height: 70px;
+		font-size: 16px;
+	}
+
+	.private-area-popup-wrapper a.login-private-area-button p {
+		max-width: 100%;
+		width: 100%;
+	}
+
+	.private-area-popup-wrapper a.hospitals-button {
+		min-height: auto;
+		height: auto;
+		padding: 15px 20px 15px 20px;
+	}
+
+	.private-area-popup-wrapper a.members-true p {
+		line-height: 120%;
+		top:0;
+		padding: 15px 0 0 0;
+	}
+}
+
+/* Private Area Popup */

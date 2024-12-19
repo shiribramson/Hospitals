@@ -1,0 +1,164 @@
+/* Footer */
+.top-navbar-footer-wrapper {
+	background: var(--color-5);
+	flex-basis: 100%;
+	padding: 5px 0 10px 0;
+}
+
+.top-navbar-footer-wrapper ul {
+	display: flex;
+	justify-content: center;
+}
+
+.top-navbar-footer-wrapper ul li a {
+	padding: 10px 15px 10px 15px;
+	display: block;
+	font-size: 18px;
+	color: var(--white);
+	letter-spacing: 0;
+	text-align: center;
+	line-height: 20px;
+	margin: 0 15px 0 15px;
+}
+
+.top-navbar-footer-wrapper li {
+	list-style: none;
+	position: relative;
+}
+
+.top-navbar-footer-wrapper li:not(:last-child):after {
+	content: '';
+	width: 1px;
+	height: 18px;
+	background: white;
+	position: absolute;
+	right: 100%;
+	left: 0;
+	bottom: 34%;
+	margin: auto;
+}
+
+.top-navbar-footer-wrapper li a {
+	color: white;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.top-navbar-footer {
+	justify-content: center;
+	margin: auto;
+}
+
+.hospitals-footer-wrapper {
+	padding: 0 0 0 10px;
+}
+
+.hospitals-footer-main-wrapper {
+	width: 85%;
+	margin: auto;
+}
+
+.hospitals-footer {
+	padding: 45px 10px 45px 10px;
+	background: var(--color-6);
+	color: white;
+}
+
+.hospitals-footer-wrapper ul {
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+div.ul-wrapper-list {
+	padding: 1rem 0 0 0;
+}
+
+.hospitals-footer-wrapper ul li {
+	list-style: none;
+	font-size: 18px;
+}
+
+.hospitals-footer p.title {
+	color: var(--white);
+	font-size: 20px;
+	height: 2rem;
+	margin-bottom: 2.5rem;
+	font-family: OpenSansHebrew-Bold;
+}
+
+.hospitals-footer a,
+.hospitals-footer a:hover,
+.hospitals-footer a:active,
+.hospitals-footer a:focus,
+.hospitals-footer a:visited {
+	color: var(--white);
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.hospitals-footer label.bold {
+	font-family: OpenSansHebrew-Bold;
+}
+
+.hospitals-footer p.bold {
+	font-size: 18px;
+	font-family: OpenSansHebrew-Bold;
+	margin: 0;
+	padding: 30px 0 0 0;
+}
+
+.hospitals-footer p.padding-0 {
+	padding: 0;
+}
+
+footer {
+    margin: 50px 0 0 0;
+}
+
+
+@media only screen and (max-width:1024px) {
+	.hospitals-footer {
+		text-align: center;
+		display: none;
+	}
+
+	.top-navbar-footer-wrapper {
+		padding: 10px 0 10px 0;
+	}
+
+	.top-navbar-footer-wrapper {
+		padding: 2px 15px 10px 15px;
+	}
+
+	.footer-top-navbar ul {
+		padding: 0;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		padding: 0 12px 0 12px;
+	}
+
+	.top-navbar-footer-wrapper ul li a {
+		line-height: 2px;
+		margin: 0;
+		padding: 20px 14px 20px 14px;
+		font-size: 16px;
+	}
+
+	.top-navbar-footer-wrapper li:not(:last-child):after {
+		bottom: 25%;
+	}
+}
+
+
+@media only screen and (max-width:768px) {}
+
+
+.display-table {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+}
+/* Footer */

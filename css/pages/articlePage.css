@@ -1,0 +1,245 @@
+/* Article Page */
+
+/* Section */
+.article-page-main-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .article-page-wrapper {
+  flex: 1;
+  }
+  
+   .article-page-content .section {
+      padding: 40px 0 0 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+   } 
+
+   .article-page-content .section.breadcrumb-section {
+    padding:0;
+   }
+
+   .article-page-content .section h2.big-main-title, 
+   .article-page-content .section h2.small-title
+   {
+    font-family: OpenSansHebrew-Bold;
+    color: #123985;
+    line-height: 55px;
+    padding: 10px 0 10px 0;
+   }
+  
+   .article-page-content .section h2.big-main-title{
+    font-size: 32px;
+    line-height: 120%;
+   }
+  
+  .article-page-content .section h2.small-title{
+    font-size:22px;
+  }
+
+  .article-page-content h2 {
+    font-family: OpenSansHebrew-Bold;
+  }
+
+  
+  .article-page-content .section p{
+    font-family: OpenSansHebrew-Regular;
+    font-size: 18px;
+    color: #000000;
+    margin: 0px 0 15px 0;
+    line-height: 26px;
+    display: flex;
+  }
+
+  a.link-text{
+    color : #00667D;
+    text-decoration: underline;
+  }
+  
+  .article-page-content .section p a{
+   text-decoration: underline;
+  } 
+  
+  .article-page-content .section p.manager-title {
+    margin: 0px 0 0 0;
+    font-family: OpenSansHebrew-Bold;
+    padding: 0px 0px 0px 100px;
+  }
+  
+  .s-title-items{
+    display: flex;
+    gap: 9px;
+    flex-wrap: wrap;
+  }
+  
+  .article-page-content .section .s-title-item
+  {
+   font-size: 14px;
+   display: flex;
+   gap: 10px;
+   margin: 0px 0px 5px 0;
+  }
+  
+  .article-page-content .section .s-title-item.publish-date-title,
+  .article-page-content .section .s-title-item.owner-title
+  {
+    font-size: 16px;
+  }
+  
+  .s-title-item:not(:last-child):after
+   {
+      content: '';
+      width: 1px;
+      height: 15px;
+      background: #D9D9D9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top: 4px;
+  }
+  
+  .article-page-content .logo-colors-line-desktop{
+    height:6px;
+    width:220px;
+    background-image: linear-gradient(80deg, #96d600, #96d600 20%, #29d1de 20.07%, #29d1de 40%, #17a1ba 40.07%, #17a1ba 60%, #00667d 60.07%, #00667d 80%, #044552 80.07% );
+    margin: 0 0 0 0;
+  }
+  
+  .article-page-content .section h2.title,
+  .article-page-content .section p.title 
+  {
+      font-family: OpenSansHebrew-Bold;
+      font-size: 22px;
+      color: #123985;
+      letter-spacing: 0;
+      line-height: 26px;
+  }
+  
+  .article-page-content .section p.p-section-bold-tight {
+      font-family: OpenSansHebrew-Bold;
+      margin:0;
+  }
+  
+  .article-page-content .section p.p-section-bold {
+      font-family: OpenSansHebrew-Bold;
+  }
+  
+  .article-page-content .section p.p-section-tight {
+      margin: 14px 0 0 0;
+  }
+  
+  .article-page-content .section p.p-section-bold-tight a,
+  .article-page-content .section p.p-section-bold a,
+  .article-page-content .section p.p-section-tight a{
+      color: #00667D;
+      text-decoration: underline;
+  }
+  
+
+.Authors_List ul li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Section */
+
+  
+  /* Side Navbar */
+
+  /* Side Navbar */
+  
+  
+  
+  @media only screen and (max-width: 1024px) {
+    .article-page-content .section p.manager-title {
+      padding: 0;
+    }
+  
+    .s-title-items{
+      gap: 0;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+  
+    .s-title-items.column {
+      flex-direction: column;
+    }
+  
+    .article-page-content .section p.s-title-item.publish-date-title, .article-page-content .section p.s-title-item.owner-title,
+    .Authors_List ul li
+    {
+      font-size: 14px;
+    }
+  
+    .s-title-item:not(:last-child):after{
+      display: none;
+    }
+
+    .article-page-content .section div.text a {
+       display: inline-block;
+       max-width: 90%;
+      }
+  
+    .article-page-wrapper .hospitals-categories{
+      margin: 30px auto 20px;
+    }
+  
+    .article-page-content .section h2.small-title{
+      font-size: 22px;
+      max-width: 250px;
+      line-height: 30px;
+    }
+  
+
+    .article-page-content{
+      margin: auto;
+      width: 100%;
+    }
+  
+    .article-page-content .section h2.title, .article-page-content .section p.title {
+      margin: 30px 0px 0px;
+    }
+  
+      .article-page-content .section{
+        padding: 0;
+        width: 92%;
+        margin: auto;
+      } 
+  
+
+    .padding-top-20 {
+      padding-top: 20px;
+    }
+  
+    
+  .padding-top-20-mobile {
+    padding-top: 20px;
+  }
+  
+      .article-page-content .section h2{
+        font-size:22px;
+        padding: 10px 0 0px 0;
+        line-height: 32px;
+      }
+      
+      .article-page-content .section p.manager-title {
+        margin: 2px 0 0 0;
+        color: #000000;
+        font-size: 14px;
+      }
+  
+      .box-info-title {
+        padding: 30px 0 45px 0;
+      }
+  
+    
+    .border-bottom-mobile {
+      border-bottom: 1px solid #E3E7F0;
+      padding: 0 0 48px 0!important;
+    }
+  }  
+  
+  /* Article Page */

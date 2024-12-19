@@ -1,0 +1,138 @@
+/* Common */
+:root {
+	 --gap: ; 
+	 --emergency-gap: ; 
+}
+
+*{
+	box-sizing: border-box;
+}
+
+html,
+body {
+	overflow-x: hidden;
+	direction: rtl;
+	height: auto;
+}
+
+#s4-workspace
+{
+overflow-x: hidden;
+}
+
+body {
+	margin: 0;
+	direction: rtl;
+	font-family: OpenSansHebrew-Regular;
+}
+
+body.ms-backgroundImage {
+	background: url(../../images/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* bg */
+/* body.ms-backgroundImage {
+    background: url(../images/bg-hospitals2.png);
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+}   */
+/* bg  */
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+#overlay {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 29, 64, 0.40);
+	z-index: 9999;
+	cursor: pointer;
+	transition: all 0.4s ease;
+	backdrop-filter: blur(1.2px);
+	-webkit-backdrop-filter: blur(1.2px);
+}
+
+.filter {
+	/* filter: brightness(75%) blur(1.5px); */
+}
+
+.main-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+a:hover,
+a:active {
+	text-decoration: none;
+}
+
+/*for edit mode*/
+.column_700 {
+    width: 700PX;
+    float: right;
+    padding-left: 15px;
+}
+
+.column_247 {
+    width: 247px;
+    margin: 0 15px 0 0;
+    float: left;
+}
+
+.PageProperties {
+    width: 980px;
+    margin: auto;
+}
+
+/*for send to friend iframe*/
+.article_page_litebox_iframe {
+    width: 400px;
+    min-height: 500px;
+    padding-bottom: 5px;
+    background: #fff url(/_layouts/15/Hospitals/Images/FormFotter_bg.png) no-repeat 0 bottom;
+}
+
+    .article_page_litebox_iframe.error_message {
+        width: 400px;
+        min-height: 500px;
+        padding-bottom: 5px;
+    }
+
+.modalCloseImg.SendToFriend {
+    right: 367px !important;
+}
+
+#simplemodal-container a.modalCloseImg {
+    background: url(/_layouts/15/Hospitals/Images/Close_btn.png) no-repeat;
+    width: 25px;
+    height: 29px;
+    display: inline;
+    z-index: 3200;
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+}
+
+.section.desktop-none {
+display: none!important;
+}
+
+
+@media only screen and (max-width: 768px) {
+	.mobile-none {
+		display: none;
+	}
+}
+
+/* Common */

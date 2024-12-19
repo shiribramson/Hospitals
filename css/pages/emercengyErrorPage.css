@@ -1,0 +1,16 @@
+/* Section */
+.emercengy-error-page-main-wrapper {
+    
+  }
+  
+  .emercengy-error-page-wrapper {
+
+  }
+  
+.emercengy-error-page-content .section {
+      padding: 35px 0 0 0px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+} 
+/* Section */

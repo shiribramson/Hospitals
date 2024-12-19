@@ -1,0 +1,187 @@
+/* Search Result Page */
+
+/* Section */
+.search-result-page-main-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-row.search-result-page-wrapper {
+margin: 30px 0 0 0;
+}
+
+.grid-row.search-result-main{
+  row-gap: 0;
+}
+
+ .search-result-page-content .section {
+    padding: 10px 0 0 50px;
+    display: flex;
+    flex-direction: column;
+ } 
+
+ .search-result-page-content .section.breadcrumb-section {
+  padding: 0;
+} 
+
+ .search-page-title {
+  font-family: OpenSansHebrew-Bold;
+  font-size: 48px;
+  color: #123985;
+  padding: 0px 0 20px 0;
+}
+
+.search-page-sub-title {
+  font-family: OpenSansHebrew-Regular;
+  font-size: 18px;
+  color: #000000;
+  padding: 0 0 30px 0;
+}
+
+ .search-result-page-content .bottom-tags {
+  gap: 20px;
+} 
+
+ .search-result-page-content .section.doctor-info{
+  padding: 50px 0 0 0;
+ }
+
+.search-result-page-content .section h2 {
+  font-family: OpenSansHebrew-Regular;
+  font-size: 22px;
+  color: #00667D;
+  line-height: 35px;
+  text-decoration: underline;
+}
+
+
+.search-result-page-content .section h2.small-title{
+  font-size:22px;
+}
+
+.load-more-item.show{
+  display: flex;
+}
+
+
+/* Box info */
+.search-result-page-content .section .box-info {
+  background: #FFFFFF;
+  box-shadow: 0 4px 23px 0 rgba(20,52,116,0.12);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 35px 20px 20px;
+}
+
+img.search-result-icon{
+  width: 50px;
+  height:50px;
+  object-fit: contain;  
+}
+
+.search-result-page-content .section .box-info-title-wrapper {
+display: flex;
+gap: 10px;
+padding: 20px 0 20px 0;
+align-items: flex-start;
+}
+
+.search-box-info{
+  display: flex;
+  flex-direction: column;
+}
+
+.box-info-span, .box-info-span a{
+  font-size: 16px;
+  color: #00667D;
+}
+
+.search-box-info-inner{
+  display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-result-page-content .section .list-info span  {
+font-family: OpenSansHebrew-Bold;
+}
+
+.search-result-page-content .section .list-info ul  {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.search-result-page-content .section .list-info ul li.choosen-links {
+display: flex;
+gap: 5px;
+}
+
+
+.search-result-page-content .section .list-info ul li {
+list-style-type: disc;
+font-size: 18px;
+}
+
+.search-result-page-content .section .list-info ul li.list-style-none {
+list-style-type: none;
+position: relative;
+right: -18px;
+}
+
+.search-result-page-content .section .list-info ul li.list-style-none a {
+color: #00667D;
+}
+/* Box info */
+
+
+.search-result-page-content .section p{
+  font-family: OpenSansHebrew-Regular;
+  font-size: 18px;
+  color: #000000;
+  line-height: 26px;
+  gap: 10px;
+  display: flex;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  
+  .search-result-page-content{
+    margin: auto;
+    width: 100%;
+  }
+
+    .search-result-page-content .section{
+      padding: 0;
+      width: 100%;
+      margin: auto;
+    } 
+
+  .search-page-title{
+      font-size: 22px;
+  }
+
+  img.search-result-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .search-result-page-content .section h2  {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .search-result-page-content .section p{
+    font-size: 16px; 
+  }
+
+  .search-page-sub-title{
+    font-size: 16px; 
+  }
+  
+}  
+
+/* Search Result Page */

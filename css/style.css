@@ -1,0 +1,98 @@
+/* Utilities */
+@import "./Utilities/core15.css";
+
+
+@import "./Utilities/reset.css";
+@import "./Utilities/fonts.css";
+@import "./Utilities/common.css";
+
+
+/* Color Pallate */
+@import "./Utilities/colorPallate/belinson_style.css";
+@import "./Utilities/colorPallate/beit_rivka_style.css";
+@import "./Utilities/colorPallate/haemek_style.css";
+@import "./Utilities/colorPallate/kaplan_style.css";
+@import "./Utilities/colorPallate/meir_style.css";
+@import "./Utilities/colorPallate/clalit.css";
+@import "./Utilities/colorPallate/yoseftal_style.css";
+@import "./Utilities/colorPallate/shalvata_style.css";
+@import "./Utilities/colorPallate/soroka_style.css";
+@import "./Utilities/colorPallate/carmel_style.css";
+@import "./Utilities/colorPallate/levinstain_style";
+@import "./Utilities/colorPallate/geha_style.css";
+@import "./Utilities/colorPallate/harzfeld_style.css";
+
+
+/* Owl Carousel */
+@import "./Addons/owl-carousel/2.3.4/assets/owl.carousel.min.css";
+@import "./Addons/owl-carousel/2.3.4/assets/owl.theme.default.min.css";
+
+
+/* Layout */
+@import "./Layout/grid.css";
+
+
+/* Pages */
+@import "./Pages/unitPage.css";
+@import "./Pages/articlePage.css";
+@import "./Pages/doctorPage.css";
+@import "./Pages/eventPage.css";
+@import "./Pages/pageWithEmergencyCarousel.css";
+@import "./Pages/PageWithIframe.css";
+@import "./Pages/lobbyPage.css";
+@import "./Pages/searchResultPage.css";
+@import "./Pages/faqPage.css";
+@import "./Pages/lobbyPageWithArticles.css";
+@import "./Pages/emercengyErrorPage.css";
+@import "./Pages/404Page.css";
+@import "./Pages/404Page2.css";
+
+
+/* Reusable Components */
+@import "./Components/navbarDesktop.css";
+@import "./Components/navbarMobile.css";
+@import "./Components/stickyNavbar.css";
+@import "./Components/categoriesStrip.css";
+@import "./Components/header.css";
+@import "./Components/footer.css";
+@import "./Components/breadcrumb.css";
+@import "./Components/tagsItems.css";
+@import "./Components/loadMore.css";
+@import "./Components/listTagsItems.css";
+@import "./Components/socialMediaBanner.css";
+@import "./Components/socialMediaBtn.css";
+@import "./Components/heroBanner.css";
+@import "./Components/privateAreaPopup.css";
+@import "./Components/pagination.css";
+@import "./Components/sectionImg.css";
+@import "./Components/sectionVideo.css";
+@import "./Components/boxNumbers.css";
+@import "./Components/eventsBox.css";
+@import "./Components/sideNavbar.css";
+@import "./Components/iframeItem.css";
+@import "./Components/articleItem.css";
+@import "./Components/searchResult.css";
+@import "./Components/index.css";
+@import "./Components/form.css";
+@import "./Components/picture_gallery.css";
+@import "./Components/errorMessage.css";
+@import "./Components/accordion.css";
+@import "./Components/autocomplete.css";
+@import "./Components/pageContent.css";
+
+
+/* Non-reusable Components */
+@import "./Components/tabs.css";
+@import "./Components/articles.css";
+@import "./Components/specialty.css";
+@import "./Components/heroCarousel.css";
+@import "./Components/heroCarouselV2.css";
+@import "./Components/heroCarouselV3.css";
+@import "./Components/emergencyHeroCarousel.css";
+@import "./Components/emergencyCarousel.css";
+@import "./Components/newsCarousel.css";
+@import "./Components/videoCarousel.css";
+@import "./Components/lobbyNewsCarousel.css";
+@import "./Components/lobbyVideoCarousel.css";
+@import "./Components/sitemap.css";
+

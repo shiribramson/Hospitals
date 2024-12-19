@@ -1,0 +1,159 @@
+html,
+body {
+	direction: ltr;
+	text-align: left;
+}
+
+#hero-carousel .item-details {
+	right: auto;
+	left: 190px;
+}
+
+#emergency-carousel .item-details {
+	right: auto;
+	left: 190px;
+}
+
+#hero-carousel .owl-dots {
+	left: auto;
+	right: 98px;
+}
+
+#hero-carousel .owl-nav {
+	left: auto;
+	right: 52px;
+}
+
+img.emergency-arrow,
+#hero-carousel .owl-nav button,
+#news-carousel .owl-prev,
+#news-carousel .owl-next,
+#video-carousel .owl-prev,
+#video-carousel .owl-next,
+#news-carousel.owl-carousel .owl-item img.arrow-left-icon {
+	transform: rotate(180deg);
+}
+
+#emergency-carousel img.emergency-img,
+#hero-carousel img.hero-img {
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+
+#emergency-carousel .owl-dots {
+	right: auto;
+	left: 200px;
+}
+
+.hospitals-categories a {
+	position: relative;
+}
+
+a.hospital-category-link:not(:last-child) {
+	border-right: 1px solid #E3E7F0;
+}
+
+a.hospital-category-link:not(:last-child):after {
+	display: none;
+}
+
+div.info,
+.articles-wrapper div.info {
+	padding: 15px 75px 0 0;
+}
+
+#news-carousel .owl-prev,
+#video-carousel .owl-prev {
+	margin-right: auto;
+	margin-left: -65px;
+}
+
+#news-carousel .owl-next,
+#video-carousel .owl-next {
+	margin-left: auto;
+	margin-right: -65px;
+}
+
+.top-navbar-footer-wrapper li:not(:last-child):after {
+	right: auto;
+	left: 100%;
+}
+
+.block-icon img {
+	right: auto;
+	left: 0;
+}
+
+button.search-icon {
+	left: auto;
+	right: 53px;
+}
+
+button.to-online-btn,
+button.to-online-btn:hover {
+	border-radius: 0;
+	border-bottom-right-radius: 30px;
+	border-top-left-radius: 30px;
+	margin: 0 -5px 0 0;
+}
+
+.top-header {
+	padding: 0 0 0 15px;
+}
+
+div.lang ul.lang-dropdown-menu li {
+	flex-direction: row;
+}
+
+.private-area-popup {
+	left: auto;
+	right: 10px;
+	border-radius: 30px 0 30px 30px;
+}
+
+/* UNIT PAGE */
+
+.hero-img-wrapper h1 {
+	right: auto;
+	left: 50px;
+	z-index: 9;
+}
+
+img.hero-img {
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+
+@media only screen and (max-width: 768px) {
+
+	#hero-carousel .item-details {
+		left: 0;
+	}
+
+	#emergency-carousel .item-details {
+		left: 0;
+	}
+
+	header .menu-bar {
+		flex-direction: row-reverse;
+	}
+
+	button.search-icon {
+		left: auto;
+		right: -9px;
+	}
+
+	.articles-sub-wrapper,
+	.article-variant-1 .articles-sub-wrapper {
+		padding: 70px 5px 70px 22px;
+		border-radius: 0;
+	}
+
+	.owl-nav {
+		direction: rtl;
+	}
+
+	.unit-page-content>.section {
+		padding: 50px 50px 0 0;
+	}
+}

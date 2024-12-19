@@ -1,0 +1,294 @@
+/* Event Page */
+
+/* Section */
+.event-page-main-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .event-page-wrapper {
+  flex: 1;
+  overflow-x: hidden;
+  }
+  
+   .event-page-content .section {
+      padding: 50px 0 0 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+   } 
+
+   .event-page-content .section.breadcrumb-section {
+   padding: 0;
+   }
+
+   .event-page-wrapper .info-section {
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 6% 6% 6%;
+}
+
+   .event-page-content .section h2.big-main-title, 
+   .event-page-content .section h2.medium-title,
+   .event-page-content .section h2.small-title
+   {
+    font-family: OpenSansHebrew-Bold;
+    color: #123985;
+    line-height: 50px;
+   }
+  
+   .event-page-content .section h2.big-main-title{
+    font-size: 32px;
+   }
+
+   .event-page-content .section h2.medium-title{
+    font-size: 32px;
+   }
+  
+  .event-page-content .section h2.small-title{
+    font-size:22px;
+  }
+  
+  .event-page-content .section p{
+    font-family: OpenSansHebrew-Regular;
+    font-size: 18px;
+    color: #000000;
+    letter-spacing: 0;
+    margin:  0px 0 5px 0;
+    line-height: 26px;
+    gap: 10px;
+    display: flex;
+  }
+  
+ 
+  a.link-text{
+    color : #00667D;
+    text-decoration: underline;
+  }
+  
+  .event-page-content .section p a{
+   text-decoration: underline;
+  } 
+  
+  .event-page-content .section p.manager-title {
+    margin: 0px 0 0 0;
+    font-family: OpenSansHebrew-Bold;
+    padding: 0px 0px 0px 100px;
+  }
+  
+  .s-title-items{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .event-page-content .section p.s-title-item
+  {
+   font-size: 14px;
+  }
+  
+  .event-page-content .section p.s-title-item.publish-date-title,
+  .event-page-content .section p.s-title-item.owner-title
+  {
+    font-size: 16px;
+  }
+  
+  .s-title-item:not(:last-child):after
+   {
+      content: '';
+      width: 1px;
+      height: 15px;
+      background: #D9D9D9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top: 4px;
+  }
+  
+  .event-page-content .logo-colors-line-desktop{
+    height:6px;
+    width:220px;
+    background-image: linear-gradient(80deg, #96d600, #96d600 20%, #29d1de 20.07%, #29d1de 40%, #17a1ba 40.07%, #17a1ba 60%, #00667d 60.07%, #00667d 80%, #044552 80.07% );
+    margin: 0 0 0 0;
+  }
+
+  .logo-colors-line-desktop.second-line {
+  display: none;
+  }
+  
+  .event-page-content .section h2.title,
+  .event-page-content .section p.title 
+  {
+      font-family: OpenSansHebrew-Bold;
+      font-size: 22px;
+      color: #123985;
+      letter-spacing: 0;
+      line-height: 26px;
+      margin: 10px 0px 0px;
+      padding: 20px 0 10px 0;
+  }
+  
+  .event-page-content .section p.p-section-bold-tight {
+      font-family: OpenSansHebrew-Bold;
+      margin:0;
+  }
+  
+  .event-page-content .section p.p-section-bold {
+      font-family: OpenSansHebrew-Bold;
+  }
+  
+  .event-page-content .section p.p-section-tight {
+      margin: 14px 0 0 0;
+  }
+  
+  .event-page-content .section p.p-section-bold-tight a,
+  .event-page-content .section p.p-section-bold a,
+  .event-page-content .section p.p-section-tight a{
+      color: #00667D;
+      text-decoration: underline;
+  }
+
+  .event-page-content .section-img-wrapper.desktop-none {
+    display: none;
+    }
+
+    .desktop-none {
+      display: none;
+  }
+  
+  
+  /* Boxes Numbers */
+  .event-page-content .numeric-number {
+    background: var(--color-2);
+  }
+  /* Boxes Numbers */
+  
+  
+  /* Side Navbar */
+
+  /* Side Navbar */
+  
+  
+  
+  @media only screen and (max-width: 1024px) {
+
+    .event-page-content .section p.manager-title {
+      padding: 0;
+    }
+  
+    .s-title-items{
+      gap: 0;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+  
+    .s-title-items.column {
+      flex-direction: column;
+    }
+  
+    .event-page-content .section p.s-title-item.publish-date-title, .event-page-content .section p.s-title-item.owner-title{
+      font-size: 14px;
+    }
+  
+    .s-title-item:not(:last-child):after{
+      display: none;
+    }
+  
+    .event-page-wrapper .hospitals-categories{
+      margin: 30px auto 20px;
+    }
+  
+    .event-page-content .section h2.small-title{
+      font-size: 22px;
+      max-width: 250px;
+      line-height: 30px;
+    }
+
+    .event-page-content .section h2.big-main-title
+    {
+        font-size: 22px;
+        padding: 10px 0 0px 0;
+        line-height: 35px;
+    }
+ 
+    .event-page-content .section h2.medium-title{
+        font-size: 22px;
+        padding: 10px 0 10px 0;
+    }
+  
+
+    .event-page-content{
+      margin: auto;
+      width: 100%;
+    }
+
+
+    .event-page-content .section h2.title, .event-page-content .section p.title {
+      margin: 30px 0px 0px;
+    }
+  
+      .event-page-content .section{
+        padding: 0;
+        width: 92%;
+        margin: auto;
+        gap: 15px;
+      } 
+  
+
+    .padding-top-20 {
+      padding-top: 20px;
+    }
+  
+    
+  .padding-top-20-mobile {
+    padding-top: 20px;
+  }
+  
+      .event-page-content .section h2{
+        font-size:22px;
+        padding: 10px 0 0px 0;
+        line-height: 32px;
+      }
+      
+      .event-page-content .section p.manager-title {
+        margin: 2px 0 0 0;
+        color: #000000;
+        font-size: 14px;
+      }
+  
+  
+      .box-info-title {
+        padding: 30px 0 45px 0;
+      }
+  
+    .border-bottom-mobile {
+      border-bottom: 1px solid #E3E7F0;
+      padding: 0 0 48px 0!important;
+    }
+
+    .event-page-content .section-img-wrapper.mobile-none {
+    display: none;
+    }
+
+    .event-page-content .s-title-items-wrapper .s-title-items.mobile-none {
+        display: none; 
+    }
+
+    .event-page-content .logo-colors-line-desktop {
+        display: block;
+        margin: 15px 0 0 0;
+    }
+
+    .logo-colors-line-desktop.first-line {
+        display: none;
+        }
+  } 
+  
+  
+  @media only screen and (max-width: 767px) {
+    .event-page-content .logo-colors-line-desktop {
+      margin: 15px -85px 0 0;
+  }
+  }
+  
+  /* Event Page */

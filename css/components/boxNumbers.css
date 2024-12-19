@@ -1,0 +1,80 @@
+/* Boxes Numbers */
+
+.section.box-info-wrapper {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.numeric-row{
+    box-shadow: 0 4px 20px 0 rgba(45,93,188,0.13);
+    background: rgba(255,255,255,0.95);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin: 20px 0 0 0;
+    padding: 25px 80px 25px 20px;
+    margin-right:20px;
+}
+
+ .numeric-number {
+    background: var(--color-1);
+    box-shadow: 0 4px 20px 0 rgba(45,93,188,0.13);
+    border-radius: 4px;
+    font-family: OpenSansHebrew-Bold;
+    font-size: 40px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    font-weight: 700;
+    width: 80px;
+    padding: 10px 15px 10px 15px;
+    position: absolute;
+    right: 9.5%;
+}
+
+.numeric-text {
+    font-family: OpenSansHebrew-Regular;
+    font-size: 18px;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: 26px;
+}
+
+p span.number {
+	font-family: OpenSansHebrew-Bold;
+}
+
+p.numeric {
+	line-height: 1;
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+.numeric-number{
+    right:0;
+    left:0;
+    }
+    
+.numeric-row{
+    padding: 75px 25px 30px 25px;
+    position: relative;
+    margin-bottom: 55px;
+    margin-right:0;
+    text-align: center;
+}
+    
+.numeric-number {
+    top: -29px;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+    
+p.numeric {
+    line-height: 1.2;
+    }
+}
+
+/* Boxes Numbers */

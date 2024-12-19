@@ -1,0 +1,308 @@
+﻿a, 
+a:visited {
+    transition: none!important;
+}
+
+.form-container {
+    margin: 0 0 20px 0;
+    padding: 5px 20px 20px 20px;
+    border: 1px solid rgba(0,0,0,.12);
+    color: #626262;
+}
+
+.form-container.bg-blue-xlight {
+    background-color: #fff !important;
+}
+
+.column_247 .form-container {
+    padding: 5px 15px 20px 15px;
+}
+
+.form-container .row {
+    margin-right: -8px;
+    margin-left: -8px;
+    max-width: unset;
+    width: auto;
+}
+
+.form-container .col-lg,
+.form-container .row legend {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.form-container * {
+    font-size: 16px;      
+}
+
+.form-container p,
+.form-container h3,
+.form-container h2,
+.form-container label,
+.form-container legend {
+    font-size: 16px;  
+    font-family: "Open Sans Hebrew"!important;    
+    line-height: 1.7;
+}
+
+.form-container p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-family: "Open Sans Hebrew"!important;
+}
+
+.form-group {
+    margin-bottom: 0.2rem;
+}
+
+.form-container h3 {
+    color: #006989;
+    border-bottom: 2px solid #006989;
+    font-family: "Open Sans Hebrew Bold"!important;    
+    font-size: 18px;
+    padding: 15px 0;
+}
+
+legend, 
+h5 {
+    color: #006989;
+    font-family: "Open Sans Hebrew Bold"!important;   
+    text-decoration: none!important;
+}
+
+.form-control,
+input[type=text].form-control,
+input[type=number].form-control,
+input[type=email].form-control,
+input[type=password].form-control,
+textarea.form-control,
+[type=password], 
+.custom-select {
+    color: rgba(0,0,0,.72);
+    padding: 6px 10px;
+    font-size: 16px;
+    font-family: "Open Sans Hebrew"!important;
+}
+
+.ltr .form-control {
+    border-left: 3px solid #006989!important;
+}
+
+.rtl .form-control {
+    border-right: 3px solid #006989!important;
+}
+
+.form-control:focus,
+input[type=password].form-control:focus,
+input[type=number].form-control:focus,
+input[type=email].form-control:focus,
+input[type=text].form-control:focus,
+select.form-control:focus,
+textarea.form-control:focus,
+.form-control:hover,
+input[type=password].form-control:hover,
+input[type=number].form-control:hover,
+input[type=email].form-control:hover,
+input[type=text].form-control:hover,
+select.form-control:hover,
+textarea.form-control:hover {
+    border-color: #006989;
+}
+
+.form-control.is-invalid,
+input[type=password].form-control.is-invalid,
+input[type=number].form-control.is-invalid,
+input[type=email].form-control.is-invalid,
+input[type=text].form-control.is-invalid,
+select.form-control.is-invalid,
+textarea.form-control.is-invalid {
+    border-color: #db3539!important;
+    color: #db3539!important;
+}
+
+.invalid-feedback {
+    top: -10px;
+    font-family: "Open Sans Hebrew"!important;    
+}
+
+.form-check .invalid-feedback,
+textarea + .invalid-feedback {
+    font-size: 16px;
+}
+
+.fld-description {
+    color: rgba(0,0,0,.63);
+}
+
+label.fld-label {
+    height: auto;
+    line-height: 16px;
+    color: rgba(0,0,0,.54);
+    transition: none;
+}
+
+label.fld-label.fld-label-placeholder {
+    padding: 0 10px;
+    margin-bottom: -58px;
+}
+
+label.fld-label.fld-label-placeholder + .form-control  {
+    margin-top: 4px;
+}
+
+.required-field:before {
+    font-weight: bold;
+}
+
+.form-control.datepicker {
+    background: url(../images/socials/calendar.svg) left center no-repeat;
+    background-size: 24px 24px;
+}
+
+.form-check label {
+    color: #006788;
+}
+
+.form-container .btn-secondary, 
+.form-container .btn-secondary:visited  {
+    width: 100%;
+    background-color: #0275a1;
+    border-color: #0275a1;
+    color: #fff;
+    border-radius: 0; 
+}
+
+.form-container .btn-secondary:hover {
+    background-color: #006788;
+    border-color: #006788;
+}
+
+.form-check input + label {
+    padding: 8px 35px !important;
+    margin-top: -30px;
+}
+
+.form-check input + label:before {
+    width: 24px;
+    height: 24px;
+}
+
+.form-check input[type=radio]:checked + label:after {
+    width: 12px;
+    height: 12px;
+    margin: 6px;
+}
+
+.form-check input[type=checkbox]:checked + label:before {
+    line-height: 20px;
+}
+
+.form-check input:focus + label:before {
+    border: 1px solid #006788;
+}
+
+.required-field:before {
+    color: #db3539; 
+}
+
+.multiselect-native-select .btn-group .multiselect-container {
+    background-color: #fff;
+    box-shadow: none;
+    border: 1px solid #cccccc;
+    margin-top: -1px;
+}
+
+.multiselect-native-select .btn-group .multiselect-container .bg-blue-xlight,
+.multiselect-native-select .btn-group .multiselect-container li:hover {
+    background-color: #eeeeee!important;
+}
+
+.multiselect-native-select .btn-group .multiselect-container li a {
+    color: rgba(0,0,0,.72);
+    text-decoration: none;
+}
+
+a.fld-label {
+    color: #006788 !important;
+}
+
+.daterangepicker .calendar-table td, .daterangepicker .calendar-table th {
+    font-size: 13px;
+    width: 36px;
+    height: 26px;
+}
+
+.daterangepicker .calendar-table td.active, .daterangepicker .calendar-table td.active:hover {
+    background-color: #006788;
+}
+
+.send-feedback {
+    padding-top: 20px;
+}
+
+.send-feedback h3 {
+    border-bottom: 0;
+    margin-top: 1rem;
+}
+
+ul.dropdown-menu li {
+    padding: 0 10px!important;
+}
+
+.rtl .column_247 .form-group.phone .multiselect-native-select, 
+.rtl .column_247 .form-group.birthday .multiselect-native-select, 
+.rtl .column_247 .form-row.phone .multiselect-native-select, 
+.rtl .column_247 .form-row.birthday .multiselect-native-select {
+    margin-right: 6%;
+}
+
+.ltr .column_247 .form-group.phone .multiselect-native-select, 
+.ltr .column_247 .form-group.birthday .multiselect-native-select, 
+.ltr .column_247 .form-row.phone .multiselect-native-select, 
+.ltr .column_247 .form-row.birthday .multiselect-native-select {
+    margin-left: 6%;
+}
+
+.rtl .column_247 .form-group.birthday .fld-label + .multiselect-native-select, 
+.rtl .column_247 .form-row.birthday .fld-label + .multiselect-native-select {
+    margin-right: 0;
+}
+
+.ltr .column_247 .form-group.birthday .fld-label + .multiselect-native-select, 
+.ltr .column_247 .form-row.birthday .fld-label + .multiselect-native-select {
+    margin-left: 0;
+}
+
+.column_247 .form-container .multiselect-native-select .btn-group .multiselect-container li a label, 
+.column_247 .form-container .multiselect-form-group .btn-group .multiselect-container li a label {
+    text-indent: -44px;
+}
+
+.multiselect-native-select .btn-group .multiselect-container, 
+.multiselect-form-group .btn-group .multiselect-container {
+    overflow-x: hidden;
+}
+label.fld-label.fld-label-placeholder,
+label.fld-label.fld-label-up {
+    height: 17px;
+}
+
+@media (max-width: 768px) {
+        .form-group  {
+            margin-bottom: 1rem;
+        }
+
+.multiselect-selected-text {
+     height: 25px;
+}
+
+label.fld-label.fld-label-placeholder {
+    margin-top: 25px;
+}
+
+label.fld-label.fld-label-placeholder + .form-control  {
+    margin-top: 17px;
+}
+}
+
+

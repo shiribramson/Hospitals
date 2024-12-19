@@ -1,0 +1,70 @@
+/* Hero Banner */
+
+.hero-img-wrapper{
+    position: relative;
+    width: 100%;
+}
+
+.logo-colors-line-desktop-wrapper {
+  position: relative;
+  display: flex;
+  width: 102%;
+  left: 1%; 
+}
+
+.logo-colors-line-desktop{
+  height:10px;
+  width:100%;
+  background-image: linear-gradient(65deg, #96d600, #96d600 20%, #29d1de 20.07%, #29d1de 40%, #17a1ba 40.07%, #17a1ba 60%, #00667d 60.07%, #00667d 80%, #044552 80.07% );
+  position: relative;
+  top: -6px;
+  transform: skew(30deg);
+}
+
+.logo-colors-line-desktop.slider-desktop-line{
+  top: -10px;
+}
+
+.hero-img-wrapper h1 {
+    right: 50px;
+    position: absolute;
+    font-family: OpenSansHebrew-Bold;
+    font-size: 48px;
+    color: #123985;
+    letter-spacing: 0;
+    top: 85px;
+}
+
+.hero-img-wrapper img.hero-img{
+   width: 100%;
+   height:250px;
+   object-fit: cover;
+}
+
+@media only screen and (max-width: 1024px) {
+    .hero-img-wrapper h1{
+      top: 30px;
+      font-size: 32px;
+      position: unset!important;
+      padding: 15px 21px 15px 0;
+    }
+  
+    img.hero-img {
+      display: none;
+    }
+
+    .logo-colors-line-mobile{
+        height:6px;
+        width:100%;
+        background-image: linear-gradient(80deg, #96d600, #96d600 20%, #29d1de 20.07%, #29d1de 40%, #17a1ba 40.07%, #17a1ba 60%, #00667d 60.07%, #00667d 80%, #044552 80.07% );
+      }
+
+      .logo-colors-line-mobile.slider-mobile-line{
+        top: -6px;
+      }
+
+      .logo-colors-line-desktop{
+        display: none;
+      }
+}
+/* Hero Banner */

@@ -1,0 +1,79 @@
+/* Social Media Btn */
+
+.cta-btn-items {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .cta-btn-item{
+      background: #FFFFFF;
+      box-shadow: 0 5px 24px 0 rgba(17,43,85,0.10);
+      border-radius: 4px;
+      width: 104px;
+      max-width: 100%;
+      min-height: 90px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      padding: 8px 0 5px 0;
+      gap: 4px;
+  }
+
+  .cta-btns p.title-cta-btn-item {
+    font-family: OpenSansHebrew-Bold;
+    font-size: 22px;
+    color: #123985;
+    letter-spacing: 0;
+    line-height: 32px;
+    padding: 20px 0 20px 0;
+    margin : 10px 0 0 0;
+    display: flex;
+  }
+
+  .section p.btn-text {
+    font-size: 16px;
+    color: #061C3F;
+    text-align: center;
+    line-height: 100%;
+    margin: 10px 0;
+    padding: 0 10px;
+  }
+
+  .section.cta-btns{
+    padding: 40px 0 0 0px;
+    gap:0;
+  }
+  
+
+  .cta-btns{
+    padding: 15px 0 50px 50px;
+  }
+  
+
+  @media only screen and (max-width: 1024px) {
+    .section p.btn-text {
+      font-size: 14px;
+      text-align: center;
+      line-height: 1.5;
+  }
+
+  .section.cta-btns {
+    width: 95%;
+    padding: 10px 0 30px 0;
+  }
+
+  .cta-btn-item {
+    flex: 1 1 28%;
+    gap : 5px;
+  }
+
+  .lobby-page-section {
+    padding: 50px 0 0 0!important;
+   } 
+
+  }
+
+/* Social Media Btn */

@@ -1,0 +1,42 @@
+/** Use for text content **/
+
+.section .text *{
+   font-family: OpenSansHebrew-Regular!important;
+   font-size: 18px!important;
+}
+
+.section .text a:hover {
+   text-decoration: underline;
+}
+
+.section .text p {
+    display: block;
+}
+
+.section .text h1, .section .text h1 span,
+.section .text h2, .section .text h2 span,
+.section .text h3, .section .text h3 span,
+.section .text h4, .section .text h4 span {
+    font-family: OpenSansHebrew-Bold !important;
+    color: #123985;
+    font-size: 22px !important;
+}
+
+.section .text ul, .section .text ol {
+    padding: 0 18px 0 0;
+}
+
+.section .text ul li {
+    list-style-type: disc;
+}
+
+.section .text ol li {
+    list-style-type: decimal;
+}
+
+.section .text table,
+.section table {
+  width: 100%;
+}
+
+/** Use for text content **/

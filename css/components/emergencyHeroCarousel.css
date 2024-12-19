@@ -1,0 +1,331 @@
+/* Hero Carousel  */
+
+.emergency-hero-carousel-wrapper {
+	position: relative;
+}
+
+#emergency-hero-carousel .item-details {
+	color: black;
+	padding: 18px 18px 18px 18px;
+	border-radius: 4px;
+	position: absolute;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 12px;
+	top: 20px;
+	right: 50px;
+}
+
+#emergency-hero-carousel .item-details p.date-and-time {
+    font-family: OpenSansHebrew-Regular;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+
+
+#emergency-hero-carousel .item-details h2.item-title span {
+    font-family: OpenSansHebrew-Bold;
+    font-size: 32px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+
+#emergency-hero-carousel .item-details p {
+    font-family: OpenSansHebrew-Regular;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0.1px;
+    line-height: 24px;
+    font-weight: 400;
+    max-width: 950px;
+}
+
+#emergency-hero-carousel .item-details .emergency-read-more-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+#emergency-hero-carousel p.emergency-read-more-title {
+    font-family: OpenSansHebrew-Regular;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0.1px;
+    line-height: 24px;
+    font-weight: 400;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+#emergency-hero-carousel p.emergency-read-more-title a {
+	color: #FFFFFF;
+}
+
+#emergency-hero-carousel .hero-main-img {
+	max-width: 100%;
+	max-height: 340px;
+	display: flex;
+}
+
+#emergency-hero-carousel .owl-stage-outer {
+	height: 340px;
+}
+
+#emergency-hero-carousel img.hero-img {
+	height: 340px;
+	object-fit: cover;
+}
+
+
+#emergency-hero-carousel .item {
+	margin-bottom: 80px;
+	padding-bottom: 20px;
+	padding-top:0;
+	padding-right: 0;
+	cursor: pointer;
+}
+
+#emergency-hero-carousel .owl-carousel .owl-nav [class*=owl-].disabled:hover {
+	background-color: #D6D6D6;
+}
+
+#emergency-hero-carousel .item-details p.hero-read-more-title a {
+	color: #ffffff;
+	margin: 0;
+}
+
+#emergency-hero-carousel .item-details p.hero-read-more-title a:hover {
+	text-decoration: none;
+}
+
+#emergency-hero-carousel p.hero-read-more-title {
+	margin: 0;
+	background: var(--color-1);
+	box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.20);
+	color: white;
+	padding: 15px;
+	border-radius: 50px;
+	width: 127px;
+	display: flex;
+	justify-content: center;
+}
+
+#emergency-hero-carousel .item-details .hero-read-more-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 7px;
+}
+
+#emergency-hero-carousel .owl-next,
+#emergency-hero-carousel .owl-prev {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 32px;
+	height: 32px;
+	line-height: 50px;
+	border-radius: 50%;
+	color: #fff;
+	box-shadow: 0 4px 24px 0 rgba(45, 93, 188, 0.19);
+	min-width: auto;
+	background: transparent;
+	border: 1px solid #ffffff;
+}
+
+#emergency-hero-carousel .owl-nav {
+	display: flex;
+	width: 100%;
+	justify-content: flex-start;
+	align-items: center;
+	gap: var(--emergency-gap);
+	top: 73%;
+	right: 60px;
+	position: absolute;
+	height: 52px;
+}
+
+#emergency-hero-carousel .owl-prev img {
+	transform: rotate(-180deg);
+	width: 120px;
+}
+
+#emergency-hero-carousel .owl-prev img,
+#emergency-hero-carousel .owl-next img {
+	width: 120px;
+}
+
+#emergency-hero-carousel .owl-dots {
+	position: absolute;
+	background: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+	border-radius: 50px;
+	width: max-content;
+	bottom: 40px;
+	right: 105px;
+}
+
+#emergency-hero-carousel .owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+	background: #FFFFFF;
+}
+
+#emergency-hero-carousel .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+	background: #FFFFFF;
+}
+
+#emergency-hero-carousel .owl-dots .owl-dot span {
+	margin: 4px 5px;
+	background: rgba(255,255,255,0.5);
+	width: 9px;
+	height: 9px;
+}
+
+#emergency-hero-carousel .owl-theme .owl-dots button.owl-dot {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+#emergency-hero-carousel .owl-dot {
+	min-width: auto;
+	margin-right: 0;
+}
+
+
+@media only screen and (max-width:1024px) {
+
+	.emergency-hero-carousel-wrapper {
+		height: 340px;
+	}
+
+	#emergency-hero-carousel .hero-main-img {
+		height: 340px;
+	}
+
+	#emergency-hero-carousel .owl-stage-outer {
+		height: 340px;
+	}
+
+	#emergency-hero-carousel img.hero-img {
+		height: 340px;
+	}
+
+	
+	#emergency-hero-carousel .emergency-hero-carousel-wrapper {
+		width: 100%;
+	}
+
+	#emergency-hero-carousel .owl-nav {
+		justify-content: center;
+		top: 100%;
+	}
+
+	#emergency-hero-carousel .owl-dots {
+		background: transparent;
+	}
+
+	#emergency-hero-carousel .item {
+		margin-bottom: 111px;
+	}
+
+
+
+	#emergency-hero-carousel .owl-nav {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		gap: var(--emergency-gap);
+		top: 72%;
+		left: 0;
+		position: absolute;
+		height: 52px;
+		right: 0;
+	}
+
+	#emergency-hero-carousel .owl-dots {
+		bottom: 52px;
+		justify-content: center;
+		align-items: center;
+		right: 0;
+		position: relative;
+		display: flex;
+		left: auto;
+		width: max-content;
+		margin: auto;
+	}
+
+	#emergency-hero-carousel .item-details {
+		top: 0;
+		right: 0;
+		padding:30px;
+	}
+}
+
+
+@media only screen and (max-width:767px) {
+	#emergency-hero-carousel {
+		height: 340px;
+	}
+
+	.emergency-hero-carousel-wrapper {
+		height: 340px;
+	}
+
+	#emergency-hero-carousel .hero-main-img {
+		height: 340px;
+	}
+
+	#emergency-hero-carousel .owl-stage-outer {
+		height: 340px;
+	}
+
+	#emergency-hero-carousel img.hero-img {
+		height: 340px;
+	}
+	
+	#emergency-hero-carousel .item-details h2.item-title {
+		font-size: 32px;
+		line-height: 40px;
+	}
+
+	#emergency-hero-carousel .item-details {
+		padding: 21px;
+	}
+
+   #emergency-hero-carousel .item-details p.info{
+    max-width: 350px;
+	display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  #emergency-hero-carousel .owl-nav {
+	top: 78%;
+}
+
+  #emergency-hero-carousel .item-details h2.item-title span{
+	line-height: 0;
+  }
+
+  }
+
+/* Hero Carousel  */

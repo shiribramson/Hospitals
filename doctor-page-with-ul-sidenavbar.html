@@ -1,0 +1,2824 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospitals - Doctor Page</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="ms-backgroundImage">
+<div id="s4-workspace" style="height:100%;width:100%">
+<div id="s4-bodyContainer">
+
+<div class="grid-container">
+<div class="grid-row">
+<div class="private-area-popup column-lg-3 column-md-3 column-sm-12"> <!-- private area popup -->
+       
+    <div class="private-area-popup-wrapper">
+        <div class="grid-row">
+            <a href="#" class="column-lg-12 column-md-12 column-sm-12 login-private-area-button">
+                <p>
+               כניסה לאזור האישי
+                </p>
+            </a>
+        </div>
+
+
+        <div class="grid-row">
+            <a href="#" class="column-lg-12 column-md-12 column-sm-12 hospitals-button">
+                <p>
+                    <label>
+                        בתי חולים
+                    </label>
+                </p>
+            </a>
+        </div>
+
+        <div class="grid-row">
+            <div class="column-lg-6 column-md-6 column-sm-6">
+                <a href="#" class="members-true">
+                    <span class="members">
+                        מבוטחי כללית
+                    </span>
+                    <p>			
+                    סיכומים מבתי חולים
+                    </p>
+                </a>
+            </div>
+
+            <div class="column-lg-6 column-md-6 column-sm-6">
+                <a href="#" class="members-true">
+                    <span class="members">
+                        מבוטחי כללית
+                    </span>
+                    <p>
+                    ביקורים ומידע מבתי חולים
+                    </p>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="grid-row">
+            <div class="column-lg-6 column-md-6 column-sm-6">
+                <a href="#">
+                    <p>
+                    תורים בבתי חולים של כללית
+                    </p>
+                </a>
+            </div>
+
+            <div class="column-lg-6 column-md-6 column-sm-6">
+                <a href="#">
+                    <p>
+                תוצאות בדיקות מעבדה
+                    </p>
+                </a>
+            </div>
+        </div>
+
+
+
+        <div class="grid-row">
+            <div class="column-lg-6 column-md-6 column-sm-6">
+                <a href="#">
+                    <p>
+                בדיקות דימות מבתי חולים 
+                    </p>
+                </a>
+            </div>
+
+            <div class="column-lg-6 column-md-6 column-sm-6">
+                <a href="#">
+                    <p>
+                תוצאות סקר גנטי
+                    </p>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="grid-row">
+            <div class="column-lg-6 column-md-6 column-sm-6">
+                <a href="#">
+                    <p>
+                 פניה לבתי חולים
+                    </p>
+                </a>
+            </div>
+
+            <div class="column-lg-6 column-md-6 column-sm-6">
+                <a href="#">
+                    <p>
+                  תשלום חוב בתי חולים
+                    </p>
+                </a>
+            </div>
+        </div>
+
+        <div class="grid-row">
+            <div class="column-lg-6 column-md-6 column-sm-6">
+                <a href="#" class="disabled-button">
+                    <p>
+                            בקרוב! <br>
+                            זימון תור חוזר בבתי חולים
+                    </p>
+                </a>
+            </div>
+
+
+            <div class="column-lg-6 column-md-6 column-sm-6 visibility-hidden">
+                <a href="#" class="close-popup">
+                    <p>
+                            X
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    
+ </div>
+</div>
+</div>
+
+
+<div id="overlay"></div> <!-- overlay -->
+
+<header> <!-- header -->
+    <div class="menu-bar" id="navbar-mobile"> <!-- id="menu-bar-id "-->
+        <div>
+            <img src="./icons/open-menu-mobile.svg" class="icon-open-menu"> 
+        </div>
+
+        <div class="lang"> <!-- lang dropdown menu-->
+            <ul class="lang-dropdown-menu">
+                <li>
+                    <a href="#" class="lang-arrow">
+                        <span>
+                            <img src="./icons/arrow-up.svg" class="arrow">
+                        </span>
+                        <img src="./icons/lang-icon.svg" class="logo lang-icon">
+                    </a>
+                    <ul class="dropdown">
+                        <li class="lang-li">
+                            <a class="lang-li-a" href="#">
+                                עברית
+                                <img src="./icons/check-icon.svg">
+                            </a>
+                        </li>
+                        <li class="lang-li">
+                            <a class="lang-li-a" href="#">
+                                English
+                                <img src="./icons/check-icon.svg">
+                            </a>
+                        </li>
+        
+                        <li class="lang-li">
+                            <a class="lang-li-a" href="#">
+                                Русский
+                                <img src="./icons/check-icon.svg">
+                            </a>
+                          
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+          </div>
+    </div> <!-- lang dropdown menu-->
+
+
+
+    <div class="top-header"> 
+        <div class="grid-row header-logo-wrapper">
+            <div class="column-lg-6 column-md-6 column-sm-9 logos-wrapper">
+                <ul>
+                    <li>
+                        <img src="./icons/logo-1.png" class="logo logo-1"> 
+                    </li>
+
+                    <li> 
+                        <img src="./icons/logo-2.png" class="logo logo-2">  
+                    </li>
+
+                    <li class="line-before">
+                        <img src="./icons/logo-3.svg" class="logo logo-3">   
+                    </li>
+                </ul>
+            </div>
+
+            <div class="desktop-none">
+                <button class="to-online-btn">
+                    <span>
+                        <img src="./icons/User.svg" class="">
+                    </span>
+                </button>
+            </div>
+           
+         <div class="column-lg-6 top-header-left-side mobile-none"> 
+
+            <div class="search-box-wrapper autocomplete">
+                <input type="text" placeholder="אני מחפש/ת" id="autocomplete" name="search" class="search-box autocomplete-input">									
+                <button class="search-icon" type="submit"></button>
+            </div>
+ 
+
+           <div class="lang-and-btn-online">
+             
+            <div class="lang">
+                <ul class="lang-dropdown-menu">
+                    <li>
+                        <a href="#">
+                            <span>
+                                <img src="./icons/arrow-up.svg" class="arrow">
+                            </span>
+                            <img src="./icons/lang-icon.svg" class="logo lang-icon">
+                        </a>
+                        <ul class="dropdown">
+                            <li class="lang-li">
+                                <a class="lang-li-a" href="#">
+                                    עברית
+                                    <img src="./icons/check-icon.svg">
+                                </a>
+                               
+                            </li>
+                            <li class="lang-li">
+                                <a class="lang-li-a" href="#">
+                                    English
+                                    <img src="./icons/check-icon.svg">
+                                </a>
+                            </li>
+            
+                            <li class="lang-li">
+                                <a class="lang-li-a" href="#">
+                                    Русский
+                                    <img src="./icons/check-icon.svg">
+                                </a> 
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+              </div>
+       
+              
+              <button class="to-online-btn">
+                <span>
+                תיק רפואי אישי
+                </span>
+
+                <span class="sub-title">
+                    לכללית אונליין
+                </span>	
+            </button>
+
+            
+            </div>  
+                 
+            </div>
+        </div> 
+    </div>
+</header> <!-- header -->
+
+
+
+
+
+<!-- navbar : Desktop -->
+<nav class="navbar navbar-desktop" id="navbar-desktop"> 
+    <img src="./icons/close-menu-mobile.svg" class="icon-close-menu">
+
+    <div class="search-box-main-wrapper">
+         
+    </div>
+
+    <ul class="menu-ul">
+    
+        <li class="navbar-li">
+            <a href="#!" class="main-sub-catrogry-title" data-text="תצוגת דסקטופ">
+          תצוגת דסקטופ
+            </a>
+    
+           <ul class="mega-menu dropdown">  <!-- megamenu -->
+
+                <ul class="dropdown">
+
+                    <li class="sub-category-title"> <!-- sub category title -->
+                        <a href="#" class="sub-category-title-link">
+                         אורתופדיה
+                        </a>
+
+                        <ul class="dropdown-sub-category"> <!-- dropdown-sub-category -->
+                            <li class="sub-category-sub-title light-box-shadow">
+                                <a href="#">
+                            הכנה לבדיקות וניתוחים
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                טקסט לדוגמא כאן
+                                </a>
+                            </li>
+            
+                            <li>
+                                <a href="#">
+                                טקסט לדוגמא כאן
+                                </a>
+                            </li>
+        
+                            <li>
+                                <a href="#">
+                                 טקסט לדוגמא כאן
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    טקסט לדוגמא כאן
+                                </a>
+                            </li>
+            
+                            <li>
+                                <a href="#">
+                                    טקסט לדוגמא כאן
+                                </a>
+                            </li>
+                        </ul> <!-- dropdown-sub-category -->
+
+                    </li>  <!-- sub category title -->
+
+
+                    <li class="sub-category-title"> <!-- sub-category-title-->
+                        <a href="#" class="sub-category-title-link">
+                           מחלקת עיניים
+                        </a>
+
+                        <ul class="dropdown-sub-category"> <!-- dropdown-sub-category -->
+                            <li class="sub-category-sub-title light-box-shadow">
+                                <a href="#" class="">
+                                   הכנה לבדיקות וניתוחים
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                   הרופאים שלנו
+                                </a>
+                            </li>
+            
+                            <li>
+                                <a href="#">
+                                    טקסט לדוגמא כאן
+                                </a>
+                            </li>
+        
+                            <li>
+                                <a href="#">
+                                    טקסט לדוגמא כאן
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    טקסט לדוגמא כאן
+                                </a>
+                            </li>
+            
+                            <li>
+                                <a href="#">
+                                    טקסט לדוגמא כאן
+                                </a>
+                            </li>
+                        </ul>  <!-- dropdown-sub-category -->
+    
+                    </li> <!-- sub-category-title-->
+
+
+                    <li class="sub-category-title"> <!-- sub-category-title-->
+                        <a href="#" class="sub-category-title-link">
+                            תת קטגוריה 3                     
+                        </a>
+
+                        <ul class="dropdown-sub-category"> <!-- dropdown-sub-category -->
+                            <li class="sub-category-sub-title light-box-shadow">
+                                <a href="#">
+                                    תת קטגוריה 3 כותרת
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    תת קטגוריה 3 לינק
+                                </a>
+                            </li>
+            
+                            <li>
+                                <a href="#">
+                                    תת קטגוריה 3 לינק
+                                </a>
+                            </li>
+        
+                            <li>
+                                <a href="#">
+                                    תת קטגוריה 3 לינק
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    תת קטגוריה 3 לינק
+                                </a>
+                            </li>
+            
+                            <li>
+                                <a href="#">
+                                    תת קטגוריה 3 לינק
+                                </a>
+                            </li>
+                        </ul>  <!-- dropdown-sub-category -->
+    
+                    </li> <!-- sub-category-title-->
+
+
+                    <li class="sub-category-title"> <!-- sub-category-title-->
+                        <a href="#" class="sub-category-title-link">
+                            תת קטגוריה 4
+                        </a>
+
+                        <ul class="dropdown-sub-category"> <!-- dropdown-sub-category -->
+                            <li class="sub-category-sub-title light-box-shadow">
+                                <a href="#">
+                                    תת קטגוריה 4 כותרת
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                               תת קטגוריה 4 לינק
+                                </a>
+                            </li>
+            
+                            <li>
+                                <a href="#">
+                                    תת קטגוריה 4 לינק
+                                </a>
+                            </li>
+        
+                            <li>
+                                <a href="#">
+                                    תת קטגוריה 4 לינק
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    תת קטגוריה 4 לינק
+                                </a>
+                            </li>
+            
+                            <li>
+                                <a href="#">
+                                    תת קטגוריה 4 לינק
+                                </a>
+                            </li>
+                        </ul>  <!-- dropdown-sub-category -->
+    
+                    </li> <!-- sub-category-title-->
+
+                </ul>  <!-- megamenu -->
+            </ul>
+        </li>
+
+
+        <li class="navbar-li">
+            <a href="#!" class="main-sub-catrogry-title">
+              מידע למטופל
+            </a>
+
+           <ul class="mega-menu dropdown">  <!-- megamenu -->
+
+                <ul class="dropdown">
+
+                    <li class="sub-category-title"> <!-- sub category title -->
+                        <a href="#" class="sub-category-title-link">
+                            תת קטגוריה 1
+                        </a>
+
+                        <ul class="dropdown-sub-category"> <!-- dropdown-sub-category -->
+                            <li class="sub-category-sub-title light-box-shadow">
+                                <a href="#">
+                                     תת קטגוריה 1 כותרת
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    תת קטגוריה 1 לינק
+                                </a>
+                            </li>
+            
+                            <li>
+                                <a href="#">
+                                    תת קטגוריה 1 לינק
+                                </a>
+                            </li>
+        
+                            <li>
+                                <a href="#">
+                                    תת קטגוריה 1 לינק
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    תת קטגוריה 1 לינק
+                                </a>
+                            </li>
+            
+                            <li>
+                                <a href="#">
+                                    תת קטגוריה 1 לינק
+                                </a>
+                            </li>
+                        </ul> <!-- dropdown-sub-category -->
+
+                    </li>  <!-- sub category title -->
+
+
+                    <li class="sub-category-title"> <!-- sub-category-title-->
+                        <a href="#" class="sub-category-title-link">
+                            תת קטגוריה 2               
+                        </a>
+
+                        <ul class="dropdown-sub-category"> <!-- dropdown-sub-category -->
+                            <li class="sub-category-sub-title light-box-shadow">
+                                <a href="#">
+                                  תת קטגוריה 2 כותרת
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    תת קטגוריה 2 לינק
+                                </a>
+                            </li>
+            
+                            <li>
+                                <a href="#">
+                                    תת קטגוריה 2 לינק
+                                </a>
+                            </li>
+        
+                            <li>
+                                <a href="#">
+                                    תת קטגוריה 2 לינק
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    תת קטגוריה 2 לינק
+                                </a>
+                            </li>
+            
+                            <li>
+                                <a href="#">
+                                    תת קטגוריה 2 לינק
+                                </a>
+                            </li>
+                        </ul>  <!-- dropdown-sub-category -->
+    
+                    </li> <!-- sub-category-title-->
+
+
+
+                    <li class="sub-category-title"> <!-- sub-category-title-->
+                        <a href="#" class="sub-category-title-link">
+                            תת קטגוריה 3
+                        </a>
+
+                        <ul class="dropdown-sub-category"> <!-- dropdown-sub-category -->
+                            <li class="sub-category-sub-title light-box-shadow">
+                                <a href="#">
+                                  תת קטגוריה 3 כותרת
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    תת קטגוריה 3 לינק
+                                </a>
+                            </li>
+            
+                            <li>
+                                <a href="#">
+                                    תת קטגוריה 3 לינק
+                                </a>
+                            </li>
+        
+                            <li>
+                                <a href="#">
+                                    תת קטגוריה 3 לינק
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    תת קטגוריה 3 לינק
+                                </a>
+                            </li>
+            
+                            <li>
+                                <a href="#">
+                                    תת קטגוריה 3 לינק
+                                </a>
+                            </li>
+                        </ul>  <!-- dropdown-sub-category -->
+    
+                    </li> <!-- sub-category-title-->
+
+
+
+                    <li class="sub-category-title"> <!-- sub-category-title-->
+                        <a href="#" class="sub-category-title-link">
+                           תת קטגוריה 4                  
+                        </a>
+
+                        <ul class="dropdown-sub-category"> <!-- dropdown-sub-category -->
+                            <li class="sub-category-sub-title">
+                                <a href="#">
+                             תת קטגוריה 4 כותרת
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                תת קטגוריה 4 לינק
+                                </a>
+                            </li>
+            
+                            <li>
+                                <a href="#">
+                                    תת קטגוריה 4 לינק
+                                </a>
+                            </li>
+        
+                            <li>
+                                <a href="#">
+                                    תת קטגוריה 4 לינק
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    תת קטגוריה 4 לינק
+                                </a>
+                            </li>
+            
+                            <li>
+                                <a href="#">
+                                    תת קטגוריה 4 לינק
+                                </a>
+                            </li>
+                        </ul>  <!-- dropdown-sub-category -->
+    
+                    </li> <!-- sub-category-title-->
+                    
+
+                </ul>  <!-- megamenu -->
+            </ul>
+        </li>
+
+        <li class="navbar-li">
+            <a href="#!" class="main-sub-catrogry-title">
+                חיפושים נפוצים 
+            </a>
+        </li>
+
+        <li class="navbar-li">
+            <a href="#!" class="main-sub-catrogry-title">
+                מרכז רפואי רבין
+            </a>
+        </li>
+
+        <li class="navbar-li">
+            <a href="#!" class="main-sub-catrogry-title">
+              אקדמיה ומחקר
+            </a>
+        </li>
+
+        <li class="navbar-li">
+            <a href="#!" class="main-sub-catrogry-title">
+                עמותת הידידים
+            </a>
+        </li>
+
+        <li class="navbar-li">
+            <a href="#!" class="main-sub-catrogry-title">
+                קורונה
+            </a>
+        </li>
+
+        <li class="navbar-li">
+            <a href="#!" class="main-sub-catrogry-title">
+               בלינסון world wide
+            </a>
+        </li>
+    </ul>
+</nav>  
+<!-- navbar : Desktop -->
+
+
+
+
+<!-- navbar : Tablet & Mobile -->
+<nav class="navbar navbar-mobile"> 
+    <img src="./icons/close-menu-mobile.svg" class="icon-close-menu">
+
+    <div class="search-box-main-wrapper">
+         
+    </div>
+
+    <ul class="menu-ul">
+        <li class="search-mobile-wrapper desktop-none">
+            <a href="#">
+                <div class="search-box-wrapper autocomplete">
+					<input type="text" placeholder="אני מחפש/ת" id="autocomplete" name="search" class="search-box autocomplete-input">									
+					<button class="search-icon" type="submit"></button>
+				</div>
+            </a>
+        </li>
+
+
+        
+        <li class="navbar-li">
+            
+            <div class="navbar-li-wrapper border-none">
+
+                <div class="link-wrapper">
+                    <a href="#!" class="dark-bold-menu-item main-drowdown-arrow">
+                        מחלקות ומרפאות
+                    </a>
+                </div>
+               
+                    <div class="main-arrow-wrapper">  
+                       <img src="./icons/arrow-down.svg" class="arrow">
+                    </div>
+
+            </div>
+           
+      
+           <ul class="mega-menu dark-box-shadow dropdown">  <!-- megamenu -->
+
+                <ul class="dropdown">
+
+            <li class="sub-category-title"> <!-- sub category title -->
+                    
+            <div class="navbar-li-wrapper navbar-li-sub-wrapper toggle-border-bottom">
+
+                <div class="link-wrapper">
+                    <a href="#!" class="dark-noraml-menu-item">
+                        אורתופדיה
+                    </a>
+                </div>
+               
+                    <div class="arrow-wrapper">
+                       <img src="./icons/arrow-down.svg" class="arrow-sub">
+                    </div>
+                    
+            </div>
+           
+
+                        <ul class="dropdown-sub-category"> <!-- dropdown-sub-category -->
+                            <li class="sub-category-sub-title">
+                                <a href="#!" class="sub-category-link light-bold-menu-item">
+                            הכנה לבדיקות וניתוחים
+                                </a>
+                            </li>
+                            <li class="sub-category-sub-title">
+                                <a href="#!" class="sub-category-link">
+                                טקסט לדוגמא כאן
+                                </a>
+                            </li>
+            
+                            <li class="sub-category-sub-title">
+                                <a href="#!" class="sub-category-link">
+                                טקסט לדוגמא כאן
+                                </a>
+                            </li>
+        
+                            <li class="sub-category-sub-title">
+                                <a href="#!" class="sub-category-link">
+                                 טקסט לדוגמא כאן
+                                </a>
+                            </li>
+                            <li class="sub-category-sub-title">
+                                <a href="#!" class="sub-category-link">
+                                    טקסט לדוגמא כאן
+                                </a>
+                            </li>
+            
+                            <li class="sub-category-sub-title">
+                                <a href="#!" class="sub-category-link">
+                                    טקסט לדוגמא כאן
+                                </a>
+                            </li>
+                        </ul> <!-- dropdown-sub-category -->
+
+                    </li>  <!-- sub category title -->
+
+
+                    <li class="sub-category-title"> <!-- sub-category-title-->
+                       
+                        <div class="navbar-li-wrapper navbar-li-sub-wrapper toggle-border-bottom">
+
+                            <div class="link-wrapper">
+                                <a href="#!" class="dark-noraml-menu-item">
+                                    מחלקת עיניים
+                                </a>
+                            </div>
+                           
+                                <div class="arrow-wrapper">
+                                   <img src="./icons/arrow-down.svg" class="arrow-sub">
+                                </div>
+                                
+                        </div>
+
+
+                        <ul class="dropdown-sub-category"> <!-- dropdown-sub-category -->
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link light-bold-menu-item">
+                                   הכנה לבדיקות וניתוחים
+                                </a>
+                            </li>
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link">
+                                   הרופאים שלנו
+                                </a>
+                            </li>
+            
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link">
+                                    טקסט לדוגמא כאן
+                                </a>
+                            </li>
+        
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link">
+                                    טקסט לדוגמא כאן
+                                </a>
+                            </li>
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link">
+                                    טקסט לדוגמא כאן
+                                </a>
+                            </li>
+            
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link">
+                                    טקסט לדוגמא כאן
+                                </a>
+                            </li>
+                        </ul>  <!-- dropdown-sub-category -->
+    
+                    </li> <!-- sub-category-title-->
+
+
+                    <li class="sub-category-title"> <!-- sub-category-title-->
+                
+                        <div class="navbar-li-wrapper navbar-li-sub-wrapper toggle-border-bottom">
+
+                            <div class="link-wrapper">
+                                <a href="#!" class="dark-noraml-menu-item">
+                                    תת קטגוריה 3
+                                </a>
+                            </div>
+                           
+                                <div class="arrow-wrapper">
+                                   <img src="./icons/arrow-down.svg" class="arrow-sub">
+                                </div>
+                                
+                        </div>
+
+
+                        <ul class="dropdown-sub-category"> <!-- dropdown-sub-category -->
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link light-bold-menu-item">
+                                    תת קטגוריה 3 כותרת
+                                </a>
+                            </li>
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link">
+                                    תת קטגוריה 3 לינק
+                                </a>
+                            </li>
+            
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link">
+                                    תת קטגוריה 3 לינק
+                                </a>
+                            </li>
+        
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link">
+                                    תת קטגוריה 3 לינק
+                                </a>
+                            </li>
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link">
+                                    תת קטגוריה 3 לינק
+                                </a>
+                            </li>
+            
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link">
+                                    תת קטגוריה 3 לינק
+                                </a>
+                            </li>
+                        </ul>  <!-- dropdown-sub-category -->
+    
+                    </li> <!-- sub-category-title-->
+
+
+                    <li class="sub-category-title"> <!-- sub-category-title-->
+                  
+                        <div class="navbar-li-wrapper navbar-li-sub-wrapper toggle-border-bottom">
+
+                            <div class="link-wrapper">
+                                <a href="#!" class="dark-noraml-menu-item">
+                                    תת קטגוריה 4
+                                </a>
+                            </div>
+                           
+                                <div class="arrow-wrapper">
+                                   <img src="./icons/arrow-down.svg" class="arrow-sub">
+                                </div>
+                                
+                        </div>
+
+                        <ul class="dropdown-sub-category"> <!-- dropdown-sub-category -->
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link light-bold-menu-item">
+                                    תת קטגוריה 4 כותרת
+                                </a>
+                            </li>
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link">
+                               תת קטגוריה 4 לינק
+                                </a>
+                            </li>
+            
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link">
+                                    תת קטגוריה 4 לינק
+                                </a>
+                            </li>
+        
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link">
+                                    תת קטגוריה 4 לינק
+                                </a>
+                            </li>
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link">
+                                    תת קטגוריה 4 לינק
+                                </a>
+                            </li>
+            
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link">
+                                    תת קטגוריה 4 לינק
+                                </a>
+                            </li>
+                        </ul>  <!-- dropdown-sub-category -->
+    
+                    </li> <!-- sub-category-title-->
+
+                </ul>  <!-- megamenu -->
+            </ul>
+        </li>
+
+
+        <li class="navbar-li">
+       
+            <div class="navbar-li-wrapper">
+
+                <div class="link-wrapper">
+                    <a href="#!" class="dark-bold-menu-item main-drowdown-arrow">
+                        פוריות והפרייה חוץ גופית
+                    </a>
+                </div>
+               
+                    <div class="main-arrow-wrapper">
+                       <img src="./icons/arrow-down.svg" class="arrow">
+                    </div>
+
+            </div>
+
+    
+           <ul class="mega-menu dark-box-shadow dropdown">  <!-- megamenu -->
+
+                <ul class="dropdown">
+
+                    <li class="sub-category-title"> <!-- sub category title -->
+                     
+                        <div class="navbar-li-wrapper navbar-li-sub-wrapper toggle-border-bottom">
+
+                            <div class="link-wrapper">
+                                <a href="#!" class="dark-noraml-menu-item">
+                                    תת קטגוריה 1
+                                </a>
+                            </div>
+                           
+                                <div class="arrow-wrapper">
+                                   <img src="./icons/arrow-down.svg" class="arrow-sub">
+                                </div>
+                                
+                        </div>
+
+                        <ul class="dropdown-sub-category"> <!-- dropdown-sub-category -->
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link light-bold-menu-item">
+                                     תת קטגוריה 1 כותרת
+                                </a>
+                            </li>
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link">
+                                    תת קטגוריה 1 לינק
+                                </a>
+                            </li>
+            
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link">
+                                    תת קטגוריה 1 לינק
+                                </a>
+                            </li>
+        
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link">
+                                    תת קטגוריה 1 לינק
+                                </a>
+                            </li>
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link">
+                                    תת קטגוריה 1 לינק
+                                </a>
+                            </li>
+            
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link">
+                                    תת קטגוריה 1 לינק
+                                </a>
+                            </li>
+                        </ul> <!-- dropdown-sub-category -->
+
+                    </li>  <!-- sub category title -->
+
+
+                    <li class="sub-category-title"> <!-- sub-category-title-->
+                  
+                        <div class="navbar-li-wrapper navbar-li-sub-wrapper toggle-border-bottom">
+
+                            <div class="link-wrapper">
+                                <a href="#!" class="dark-noraml-menu-item">
+                                    תת קטגוריה 2
+                                </a>
+                            </div>
+                           
+                                <div class="arrow-wrapper">
+                                   <img src="./icons/arrow-down.svg" class="arrow-sub">
+                                </div>
+                                
+                        </div>
+
+                        <ul class="dropdown-sub-category"> <!-- dropdown-sub-category -->
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link light-bold-menu-item">
+                                  תת קטגוריה 2 כותרת
+                                </a>
+                            </li>
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link">
+                                    תת קטגוריה 2 לינק
+                                </a>
+                            </li>
+            
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link">
+                                    תת קטגוריה 2 לינק
+                                </a>
+                            </li>
+        
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link">
+                                    תת קטגוריה 2 לינק
+                                </a>
+                            </li>
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link">
+                                    תת קטגוריה 2 לינק
+                                </a>
+                            </li>
+            
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link">
+                                    תת קטגוריה 2 לינק
+                                </a>
+                            </li>
+                        </ul>  <!-- dropdown-sub-category -->
+    
+                    </li> <!-- sub-category-title-->
+
+
+
+                    <li class="sub-category-title"> <!-- sub-category-title-->
+                     
+                        <div class="navbar-li-wrapper navbar-li-sub-wrapper toggle-border-bottom">
+
+                            <div class="link-wrapper">
+                                <a href="#!" class="dark-noraml-menu-item">
+                                    תת קטגוריה 3
+                                </a>
+                            </div>
+                           
+                                <div class="arrow-wrapper">
+                                   <img src="./icons/arrow-down.svg" class="arrow-sub">
+                                </div>
+                                
+                        </div>
+
+
+                        <ul class="dropdown-sub-category"> <!-- dropdown-sub-category -->
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link light-bold-menu-item">
+                                  תת קטגוריה 3 כותרת
+                                </a>
+                            </li>
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link">
+                                    תת קטגוריה 3 לינק
+                                </a>
+                            </li>
+            
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link">
+                                    תת קטגוריה 3 לינק
+                                </a>
+                            </li>
+        
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link">
+                                    תת קטגוריה 3 לינק
+                                </a>
+                            </li>
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link">
+                                    תת קטגוריה 3 לינק
+                                </a>
+                            </li>
+            
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link">
+                                    תת קטגוריה 3 לינק
+                                </a>
+                            </li>
+                        </ul>  <!-- dropdown-sub-category -->
+    
+                    </li> <!-- sub-category-title-->
+
+
+
+                    <li class="sub-category-title"> <!-- sub-category-title-->
+                      
+                        <div class="navbar-li-wrapper navbar-li-sub-wrapper toggle-border-bottom">
+
+                            <div class="link-wrapper">
+                                <a href="#!" class="dark-noraml-menu-item">
+                                    תת קטגוריה 4
+                                </a>
+                            </div>
+                           
+                                <div class="arrow-wrapper">
+                                   <img src="./icons/arrow-down.svg" class="arrow-sub">
+                                </div>
+                                
+                        </div>
+
+                        <ul class="dropdown-sub-category"> <!-- dropdown-sub-category -->
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link light-bold-menu-item">
+                             תת קטגוריה 4 כותרת
+                                </a>
+                            </li>
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link">
+                                תת קטגוריה 4 לינק
+                                </a>
+                            </li>
+            
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link">
+                                    תת קטגוריה 4 לינק
+                                </a>
+                            </li>
+        
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link">
+                                    תת קטגוריה 4 לינק
+                                </a>
+                            </li>
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link">
+                                    תת קטגוריה 4 לינק
+                                </a>
+                            </li>
+            
+                            <li class="sub-category-sub-title">
+                                <a href="#" class="sub-category-link">
+                                    תת קטגוריה 4 לינק
+                                </a>
+                            </li>
+                        </ul>  <!-- dropdown-sub-category -->
+    
+                    </li> <!-- sub-category-title-->
+                    
+
+                </ul>  <!-- megamenu -->
+            </ul>
+        </li>
+
+
+        <li class="navbar-li">
+            <div class="navbar-li-wrapper">
+                <div class="link-wrapper">
+                    <a href="#!" class="dark-bold-menu-item main-drowdown-arrow">
+                        חיפושים נפוצים 
+                    </a>
+                </div>
+               
+                    <div class="main-arrow-wrapper"></div>
+            </div>
+        </li>
+      
+      
+    <li class="navbar-li">
+        <div class="navbar-li-wrapper">
+            <div class="link-wrapper">
+                <a href="#!" class="dark-bold-menu-item main-drowdown-arrow">
+                    מרכז רפואי רבין
+                </a>
+            </div>
+           
+                <div class="main-arrow-wrapper"></div>
+        </div>
+    </li>
+
+    
+    <li class="navbar-li">
+        <div class="navbar-li-wrapper">
+            <div class="link-wrapper">
+                <a href="#!" class="dark-bold-menu-item main-drowdown-arrow">
+                    אקדמיה ומחקר
+                </a>
+            </div>
+           
+                <div class="main-arrow-wrapper"></div>
+        </div>
+     </li>
+      
+
+     <li class="navbar-li">
+        <div class="navbar-li-wrapper">
+            <div class="link-wrapper">
+                <a href="#!" class="dark-bold-menu-item main-drowdown-arrow">
+                    עמותת הידידים
+                </a>
+            </div>
+           
+                <div class="main-arrow-wrapper"></div>
+        </div>
+    </li>
+    
+
+    <li class="navbar-li">
+        <div class="navbar-li-wrapper">
+            <div class="link-wrapper">
+                <a href="#!" class="dark-bold-menu-item main-drowdown-arrow">
+                    קורונה
+                </a>
+            </div>
+           
+                <div class="main-arrow-wrapper"></div>
+        </div>
+    </li>
+
+    <li class="navbar-li">
+        <div class="navbar-li-wrapper">
+            <div class="link-wrapper">
+                <a href="#!" class="dark-bold-menu-item main-drowdown-arrow">
+                    בלינסון world wide
+                </a>
+            </div>
+           
+                <div class="main-arrow-wrapper"></div>
+        </div>
+    </li>
+
+    </ul>
+</nav>  
+<!-- navbar : Tablet & Mobile -->
+
+
+
+
+<div class="main-wrapper doctor-page-wrapper"> <!-- main wrapper -->
+
+
+    <!--hero img-->
+    <div class="column-lg-12 column-md-12 column-sm-12 hero-img-wrapper">
+        <h1>
+            מרכז דוידוף לסרטן
+        </h1>
+        <div class="logo-colors-line-mobile"></div>
+        <img src="./images/doctor-page/cat-img.jpg" class="hero-img"/>
+        <div class="logo-colors-line-desktop-wrapper">
+            <div class="logo-colors-line-desktop"></div>
+            <div class="logo-colors-line-desktop"></div>
+            <div class="logo-colors-line-desktop"></div>
+            <div class="logo-colors-line-desktop"></div>
+        </div>
+    </div>
+<!--hero img-->
+
+    <div class="hospitals-categories"> <!-- hospitals categories -->
+        <a href="#" target="_blank" class="hospital-category-link">
+        <div class="hospitals-wrapper">    
+            <img src="icons/icon-cat-1.svg" class="icon" alt="הצטרפות לכללית"/>
+            <p>
+             הצטרפות לכללית
+            </p>
+        </div>
+    </a>
+       
+    <a href="#" target="_blank" class="hospital-category-link">
+        <div class="hospitals-wrapper">
+            <img src="icons/icon-cat-2.svg" class="icon" alt="התורים שלי"/>
+                <p>
+                    התורים שלי
+                </p>
+        </div>
+  </a>
+ 
+  <a href="#" target="_blank" class="hospital-category-link">
+        <div class="hospitals-wrapper">
+            <img src="icons/icon-cat-3.svg" class="icon" alt="זימון תורים"/>      
+                <p>
+                זימון תורים
+                </p>
+        </div>
+   </a>
+  
+   <a href="#" target="_blank" class="hospital-category-link">
+        <div class="hospitals-wrapper">
+            <img src="icons/icon-cat-4.svg" class="icon" alt="טלפונים בבית חולים"/>
+                <p>
+                    טלפונים בביה״ח
+                </p>
+        </div>
+     </a>
+        
+     <a href="#" target="_blank" class="hospital-category-link">
+        <div class="hospitals-wrapper">
+            <img src="icons/icon-cat-5.svg" class="icon" alt="דרכי הגעה"/>
+                <p>
+                דרכי הגעה
+                </p>
+        </div>
+       </a>
+
+       <a href="#" target="_blank" class="hospital-category-link">
+        <div class="hospitals-wrapper">
+            <img src="icons/icon-cat-6.svg" class="icon" alt="חפש רופא"/>
+                <p>
+                חפש רופא
+                </p>
+        </div> 
+        </a> 
+    </div>  <!-- hospitals categories -->
+
+
+
+    <div class="grid-container">
+        <div class="grid-row">
+            <div class="column-lg-10 column-md-10 column-sm-12 doctor-page-main-wrapper"> <!-- scrolling -->
+                <div class="grid-row doctor-page-wrapper">
+        
+            <div class="column-lg-9 column-md-12 column-sm-12 "><!-- START : column -->
+                
+           
+                 <!--breadcrumb-->
+                 <div class="doctor-page-content">
+                    <div class="section breadcrumb-section">
+                    <ul class="breadcrumb">
+                        <li>
+                            <a href="#" class="first-child">דף הבית</a>
+                            <img src="./images/icons/LArrow.svg"/>
+                        </li>
+
+                        <li>
+                            <a href="#">מחלקות ומרפאות</a>
+                            <img src="./images/icons/LArrow.svg"/>
+                        </li>
+
+                        <li>
+                            <a href="#">אורתופדיה</a>
+                            <img src="./images/icons/LArrow.svg"/>
+                        </li>
+
+                        <li class="active-li-item">
+                        <a href="#">
+                            מחלקה לאורתופדיה בילנסון
+                        </a>
+                        </li>  
+                    </ul>
+               </div>
+            </div>
+             <!--breadcrumb-->
+            
+
+
+                     <div class="tags-items">
+                        <ul>
+                            <li class="tag-item">
+                                <h2>
+                                <a href="#">
+                                    המרפאה לטיפול כימותרפי תוך ניתוחי (HIPEC) -(HIPEC) בילינסון בילינסון
+                                </a>
+                              </h2>
+                            </li>
+            
+                            <li class="tag-item">
+                                    <h2>
+                                    <a href="#">
+                                        מרפאה לניתוחי כבד, לבלב ודרכי מרה
+                                    </a>
+                                </h2>    
+                            </li>
+            
+                            <li class="tag-item">
+                                <h2>
+                                <a href="#">
+                                    מערך לכירורגיה כללית - השרון
+                                </a>
+                                </h2>
+                            </li>
+            
+                            <li class="tag-item">
+                                <h2>
+                                <a href="#">
+                                    מערך לכירורגיה כללית - השרון
+                                </a>
+                                </h2>
+                            </li>
+            
+                            <li class="tag-item">
+                                <h2>
+                                <a href="#">
+                                    המרכז הרבה תחומי לטיפול בעודף משקל - השרון
+                                </a>
+                                </h2>
+                            </li>
+            
+                            <li class="tag-item">
+                                <h2>
+                                <a href="#">
+                                    מרפאה לבריאות השד - השרון
+                                </a>
+                                </h2>
+                            </li>
+            
+
+            
+                            <li class="tag-item load-more-tag-item">
+                                <h2>
+                                <a href="#">
+                                    מרפאה לניתוחי כבד, לבלב ודרכי מרה
+                                </a>
+                                </h2>
+                            </li>
+            
+                            <li class="tag-item load-more-tag-item">
+                                <h2>
+                                <a href="#">
+                                    מרפאה לפרוקטולוגיה - השרון
+                                </a>
+                                </h2>
+                            </li>
+            
+                            <li class="tag-item load-more-tag-item">
+                                <h2>
+                                <a href="#">
+                                    מרפאה לטיפול בכיבים (פצעים) קשיי ריפוי - השרון
+                                </a>
+                                </h2>
+                            </li>
+            
+            
+                            <li class="tag-item load-more-tag-item">
+                                <h2>
+                                <a href="#">
+                                    הכנה לבדיקות ולניתוחים
+                                </a>
+                                </h2>
+                            </li>
+            
+                            <li class="tag-item load-more-tag-item">
+                                <h2>
+                                <a href="#">
+                                    כירורגיה - מידע נוסף
+                                </a>
+                                </h2>
+                            </li>                    
+                        </ul>
+                     </div>
+
+
+                     <div class="load-item-wrapper">
+                        <div id="load-item" class="show">  הצג עוד 
+                            <img src="/images/accordion_arrow_down.svg" alt="">
+                        </div>
+                   </div>
+            
+            
+                     <div class="doctor-page-content">
+                            <div class="section doctor-info">
+                                <h2>
+                                    פרופ׳ עמירם כ״ץ (M.D, Ph.D, M.A)
+                                </h2>
+                              
+                                <div class="s-title-items"> <!-- column -->
+                                    <p class="s-title-item publish-date-title">
+                                        מנהל המחלקה לשיקום שדרה ע״ש אורנשטיין
+                                    </p>
+                                </div>
+                          </div>
+                     </div>
+
+
+                     <div class="doctor-page-content">
+                        <div class="section">
+                            <div class="box-info doctor-box-info">
+                               <div class="grid-row">
+                                <div class="column-lg-2 column-md-12 column-sm-12">
+                               <img src="./images/doctor-page/doctor-img.png" alt="" class="doctor-img"/>
+                                </div>
+
+                            <div class="column-lg-10 column-md-10 column-sm-12">
+                              <div class="grid-row row-justify-start">
+                                <div class="column-lg-3 column-md-6 column-sm-6">
+                                <p class="title-name-item">
+                                    שם
+                                </p>
+
+                                <p class="name-item">
+                                    פרופ׳ עמירם כ״ץ
+                                </p>
+                                </div>
+
+                                <div class="column-lg-3 column-md-6 column-sm-6">
+                                    <p class="title-name-item">
+                                        דוא״ל
+                                    </p>
+    
+                                    <p class="name-item">
+                                        <a href="">
+                                            Test1@clalit.org.il
+                                        </a>                                       
+                                    </p> 
+
+                                    <p class="name-item">
+                                        <a href="">
+                                            Test1@clalit.org.il
+                                        </a> 
+                                    </p> 
+                                </div>
+
+                                <div class="column-lg-3 column-md-6 column-sm-6">
+                                    <p class="title-name-item">
+                                      טלפון
+                                    </p>
+    
+                                    <p class="name-item">
+                                        09-7961730
+                                    </p> 
+
+
+                                    <p class="name-item">
+                                        050-5454005
+                                    </p> 
+
+                                </div>
+
+                                <div class="column-lg-3 column-md-6 column-sm-6">
+                                    <p class="title-name-item">
+                                        פקס
+                                      </p>
+      
+                                      <p class="name-item">
+                                        09-7961730
+                                      </p> 
+  
+                                </div>
+
+                                <div class="column-lg-12 column-ms-12 column-sm-12 doctor-unit">
+                                    <p class="title-name-item">
+                                       יחידה
+                                    </p>
+
+                                    <div class="links-item">
+                                        <p class="name-item">
+                                            <a href="">
+                                                המחלקה לשיקום שדרה ע״ש אורנשטיין,
+                                            </a>                                       
+                                        </p>
+    
+                                        <p class="name-item">
+                                            <a href="">
+                                                המרפאה לשיקום שדרה, עצבים ופרקים,
+                                            </a>                                       
+                                        </p>
+    
+                                        <p class="name-item">
+                                            <a href="">
+                                                לינק מספר 1,
+                                            </a>                                       
+                                        </p>
+    
+                                        <p class="name-item">
+                                            <a href="">
+                                                לינק מספר 2
+                                            </a>                                       
+                                        </p>
+    
+                                    </div>
+                                    
+                                </div>
+
+                              </div>         
+                                </div>
+
+                               </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                     
+
+
+                     <div class="doctor-page-content">
+                     <div class="section">
+
+                        <div class="box-info-title-wrapper">
+                            <img src="./images/doctor-page/Proffesion.svg" alt="">
+                               <h2 class="main-box-info-title">
+                                תפקידים ומינויים
+                               </h2>
+                        </div>
+
+                        <div class="box-info">
+                            <div class="list-info">
+                                <ul>
+                                    <li>
+                                        <span>
+                                            1994 עד היום: 
+                                        </span>
+                                        מנהל המחלקה לשיקום שדרה ע״ש אורנשטיין, המרכז הרפואי לשיקום לוינשטיין
+                                    </li>
+
+                                    <li>
+                                        <span>
+                                            2011 - יוני 2019:
+                                        </span>
+                                        מנהל המרכז הרפואי לשיקום לוינשטיין, רעננה
+                                    </li>
+
+                                    <li>
+                                        <span>
+                                            1994 - 1993:
+                                        </span>
+                                        ראש מדור רפואה, בית ההחלמה הצבאי, צה״ל
+                                    </li>
+
+                                    <li>
+                                        <span>
+                                            1993 - 1991:
+                                        </span>
+                                        רופא מומחה ברפואה פיזיקאלית ושיקום, המרכז הרפואי לשיקום לוינשטיין, רעננה
+                                    </li>
+
+                                </ul>
+                            </div> 
+                        </div>
+
+
+
+                        <div class="box-info-title-wrapper">
+                            <img src="./images/doctor-page/Education.svg" alt="">
+                               <h2 class="main-box-info-title">
+                               השכלה
+                               </h2>
+                        </div>
+
+                        <div class="box-info">
+
+                            <h2>
+                               כותרת לדוגמא
+                            </h2>
+                            
+                            <div class="list-info">
+                                <ul>
+                                    <li>
+                                        <span>
+                                            1994 עד היום: 
+                                        </span>
+                                        מנהל המחלקה לשיקום שדרה ע״ש אורנשטיין, המרכז הרפואי לשיקום לוינשטיין
+                                    </li>
+
+                                    <li>
+                                        <span>
+                                            2011 - יוני 2019:
+                                        </span>
+                                        מנהל המרכז הרפואי לשיקום לוינשטיין, רעננה
+                                    </li>
+
+                                    <li>
+                                        <span>
+                                            1994 - 1993:
+                                        </span>
+                                        ראש מדור רפואה, בית ההחלמה הצבאי, צה״ל
+                                    </li>
+
+                                    <li>
+                                        <span>
+                                            1993 - 1991:
+                                        </span>
+                                        רופא מומחה ברפואה פיזיקאלית ושיקום, המרכז הרפואי לשיקום לוינשטיין, רעננה
+                                    </li>
+
+                                </ul>
+                            </div> 
+                        </div>
+
+
+
+
+                        <div class="box-info-title-wrapper">
+                            <img src="./images/doctor-page/Clinic.svg" alt="">
+                               <h2 class="main-box-info-title">
+                               התמחות
+                               </h2>
+                        </div>
+
+                        <div class="box-info">
+                            <div class="list-info">
+                                <ul>
+                                    <li>
+                                        המרכז לחקר הסרטן, מרכז רפואי שיבא
+                                    </li>
+                                </ul>
+                            </div> 
+                        </div>
+
+
+                        <div class="box-info-title-wrapper">
+                            <img src="./images/doctor-page/Clinic.svg" alt="">
+                               <h2 class="main-box-info-title">
+                             התמחות על
+                               </h2>
+                        </div>
+
+                        <div class="box-info">
+                            <div class="list-info">
+                                <ul>
+                                    <li>
+                                        המרכז לחקר הסרטן, מרכז רפואי שיבא
+                                    </li>
+                                </ul>
+                            </div> 
+                        </div>
+
+
+
+                        
+                        <div class="box-info-title-wrapper">
+                            <img src="./images/doctor-page/Academy.svg" alt="">
+                               <h2 class="main-box-info-title">
+                               השתלמויות
+                               </h2>
+                        </div>
+
+                        <div class="box-info">
+                            <div class="list-info">
+                                <ul>
+                                    <li>
+                                        <span>
+                                            1994 עד היום: 
+                                        </span>
+                                        מנהל המחלקה לשיקום שדרה ע״ש אורנשטיין, המרכז הרפואי לשיקום לוינשטיין
+                                    </li>
+
+                                    <li>
+                                        <span>
+                                            2011 - יוני 2019:
+                                        </span>
+                                        מנהל המרכז הרפואי לשיקום לוינשטיין, רעננה
+                                    </li>
+
+                                    <li>
+                                        <span>
+                                            1994 - 1993:
+                                        </span>
+                                        ראש מדור רפואה, בית ההחלמה הצבאי, צה״ל
+                                    </li>
+
+                                    <li>
+                                        <span>
+                                            1993 - 1991:
+                                        </span>
+                                        רופא מומחה ברפואה פיזיקאלית ושיקום, המרכז הרפואי לשיקום לוינשטיין, רעננה
+                                    </li>
+
+                                </ul>
+                            </div> 
+                        </div>
+
+
+
+                        <div class="box-info-title-wrapper">
+                            <img src="./images/doctor-page/Academy.svg" alt="">
+                               <h2 class="main-box-info-title">
+                               פעילות אקדמית
+                               </h2>
+                        </div>
+
+                        <div class="box-info">
+                            <div class="list-info">
+                                <ul>
+                                    <li>
+                                        <span>
+                                            1994 עד היום: 
+                                        </span>
+                                        מנהל המחלקה לשיקום שדרה ע״ש אורנשטיין, המרכז הרפואי לשיקום לוינשטיין
+                                    </li>
+
+                                    <li>
+                                        <span>
+                                            2011 - יוני 2019:
+                                        </span>
+                                        מנהל המרכז הרפואי לשיקום לוינשטיין, רעננה
+                                    </li>
+
+                                    <li>
+                                        <span>
+                                            1994 - 1993:
+                                        </span>
+                                        ראש מדור רפואה, בית ההחלמה הצבאי, צה״ל
+                                    </li>
+
+                                    <li>
+                                        <span>
+                                            1993 - 1991:
+                                        </span>
+                                        רופא מומחה ברפואה פיזיקאלית ושיקום, המרכז הרפואי לשיקום לוינשטיין, רעננה
+                                    </li>
+
+                                </ul>
+                            </div> 
+                        </div>
+
+
+
+                        <div class="box-info-title-wrapper">
+                            <img src="./images/doctor-page/forum.svg" alt="">
+                               <h2 class="main-box-info-title">
+                             חברויות באיגודים וארגונים מקצועיים
+                               </h2>
+                        </div>
+
+                        <div class="box-info">
+                            <div class="list-info">
+                                <ul>
+                                    <li>
+                                        <span>
+                                            1994 עד היום: 
+                                        </span>
+                                        מנהל המחלקה לשיקום שדרה ע״ש אורנשטיין, המרכז הרפואי לשיקום לוינשטיין
+                                    </li>
+
+                                    <li>
+                                        <span>
+                                            2011 - יוני 2019:
+                                        </span>
+                                        מנהל המרכז הרפואי לשיקום לוינשטיין, רעננה
+                                    </li>
+
+                                    <li>
+                                        <span>
+                                            1994 - 1993:
+                                        </span>
+                                        ראש מדור רפואה, בית ההחלמה הצבאי, צה״ל
+                                    </li>
+
+                                    <li>
+                                        <span>
+                                            1993 - 1991:
+                                        </span>
+                                        רופא מומחה ברפואה פיזיקאלית ושיקום, המרכז הרפואי לשיקום לוינשטיין, רעננה
+                                    </li>
+
+                                </ul>
+                            </div> 
+                        </div>
+
+
+                        <div class="box-info-title-wrapper">
+                            <img src="./images/doctor-page/Chosen.svg" alt="">
+                               <h2 class="main-box-info-title">
+                           פרסומים נבחרים
+                               </h2>
+
+                        </div>
+
+                        <div class="box-info">
+                            <div class="list-info">
+                                <ul>
+                                    <li class="list-style-none choosen-links">
+                                        <img src="./images/doctor-page/ArrowLeftLink.svg" alt="">
+    
+                                    <a href="">
+                                        פרופ׳ עמירם כ״ץ - רשימת מאמרים ומחקרים
+                                        <img src="" alt="">
+                                    </a>    
+                                    </li>
+
+                                </ul>
+                            </div> 
+                        </div>
+
+
+
+                        <div class="box-info-title-wrapper">
+                            <img src="./images/doctor-page/Statoscope.svg" alt="">
+                               <h2 class="main-box-info-title">
+                          נסיון קליני קודם
+                               </h2>
+                        </div>
+
+                        <div class="box-info">
+                            <div class="list-info">
+                                <ul>
+                                    <li class="list-style-none">
+                                   
+                                        מנהל המחלקה לשיקום שדרה ע״ש אורנשטיין, המרכז הרפואי לשיקום לוינשטיין
+                                      
+                                    </li>
+
+                                </ul>
+                            </div> 
+                        </div>
+
+
+
+                
+                        <div class="box-info long-info-text">
+                            <div class="list-info">
+                                <ul>
+                                    <li class="list-style-none">
+
+                                        טקסט ארוך של מספר שורות, טקסט ארוך של מספר שורות, טקסט ארוך של מספר שורות, טקסט ארוך של מספר שורות,
+                                        טקסט ארוך של מספר שורות, טקסט ארוך של מספר שורות, טקסט ארוך של מספר שורות, טקסט ארוך של מספר שורות, טקסט ארוך 
+                                        של מספר שורות, טקסט ארוך של מספר שורות, טקסט ארוך של מספר שורות, טקסט ארוך של מספר שורות
+                                    </li>
+
+                                    <li>
+                                        פרס וולף לתלמידי דוקטורט
+                                    </li>
+
+                                    <li>
+                                        עמית גולדה מאיר למחקר
+                                    </li>
+
+                                    <li>
+                                        עמית קרן פולקס ל-MD Phd
+                                    </li>
+
+                                    <li>
+                                        פרס קרן קיימת למחקר
+                                    </li>
+
+                                    <li>
+                                        פרס שלומיוק למחקר מצטיין, האוניברסיטה העברית
+                                    </li>
+
+                                </ul>
+                            </div> 
+                        </div>
+
+
+                     </div>
+                  </div>
+
+
+                  
+      
+            
+  
+        
+  
+        
+         <div class="doctor-page-content">
+            <div class="gradient-banner-bg">
+        
+                <div class="gradient-banner-bg-wrapper">
+                    <div>
+                        <p class="title">
+                            האם תוכן זה היה מועיל?
+                        </p>
+                
+                        <p class="sub-title">   
+                                3 אנשים 
+                            <span>
+                         אהבו את זה
+                          </span>
+                        </p>
+
+                        <p class="sub-title">   
+                          
+                        <span>
+                            <a href="">
+                                הירשם/י
+                            </a>
+                       כדי לראות מה החברים שלך אוהבים
+                      </span>
+                        </p>
+
+                    </div>
+                   
+                </div>
+        
+        
+        <div class="social-media-main-wrapper">
+                <div class="social-media-wrapper">
+        
+                    <a href="#">
+                    <div class="social-media-button">
+                            <img src="./images/like-icon.svg"/>
+                            <span>
+                                לייק
+                            </span>
+                    </div>
+                </a>
+        
+                <a href="#">
+                   <div class="social-media-button">
+                        <img src="./images/share-icon.svg"/>
+                        <span>
+                            שיתוף
+                        </span>     
+                    </div>
+                </a>
+                
+                </div>
+              
+              </div>
+            </div>
+        
+            <p class="social-mobile-info">
+                <img src="./images/info-icon.svg"/>
+                לתשומת לבך, השימוש באפשרויות השונות של ״פייסבוק״ עשוי לשתף את המידע עם אחרים
+            </p>
+        
+        
+        </div>
+        
+        
+        <div class="doctor-page-content section-top-mobile">
+            <div class="section bottom-tags">
+                <div class="bottom-tags-wrapper">
+                    <p class="title">
+                        תגיות
+                     </p>
+                </div>
+        
+                <div class="bottom-tag-items">
+                    <div class="bottom-tag-item">
+                        <a href="#">
+                           חדשות מרכז הכרמל
+                        </a>  
+                    </div>
+    
+                </div>     
+            </div>
+        </div>
+        
+        
+        <div class="doctor-page-content section-top-bottom-mobile">
+            <div class="section cta-btns">
+                <div class="cta-btn-wrapper">
+                    <p class="title">
+                       אני רוצה
+                     </p>
+                </div>
+        
+                <div class="cta-btn-items">
+                    <div class="cta-btn-item">
+                        <a href="#">
+                          <img src="./images/print.svg"/>
+                        </a>  
+                        <p class="btn-text">
+                            להדפיס
+                        </p>
+                    </div>
+        
+                    <div class="cta-btn-item">
+                        <a href="#">
+                            <img src="./images/pdf.svg"/>   
+                        </a> 
+                        <p class="btn-text">
+                            לשמור כ PDF
+                        </p> 
+                    </div>
+        
+                    <div class="cta-btn-item">
+                        <a href="#">
+                            <img src="./images/bigshare.svg"/>   
+                        </a> 
+                        <p class="btn-text">
+                            לשלוח בדוא”ל
+                        </p> 
+                    </div>
+                </div>     
+            </div>
+        </div>
+        
+        
+        </div> <!-- END : column -->
+        
+                
+    <div class="column-lg-3 column-md-3 column-sm-12 side-navbar mobile-none"><!-- START : column --> <!--add class "navbar-empty" to make navbar with transpatent background-->
+        
+        <div class="side-navbar-item-wrapper"> <!--side navbar item : start-->
+            <div class="btn-side-navbar-items info-section">
+            
+            
+            <h3 class="main-title">
+                מן העיתונות
+            </h3>
+
+
+                <div class="column-wrapper">
+                    <div class="column-page">
+                    <ul>
+                        <li>
+                            <a title="פורום ניתוחי לב וחזה" href="/rabin/he/departments-and-clinics/cardiothoracic-surgery/Pages/heart_surgery_forum.aspx">
+                                פרופ׳ עמירם כץ וד״ר ודים בלובשטיין 
+                                (שיקום חוט שדרה), ד״ר שרון שקלאי 
+                                (שיקום ילדים ונוער) בדירוג פרובס 
+                                פורבס לרופאים הטובים ביותר בישראל 
+                                לשנת 2021
+                            </a>
+                         </li>
+                        <li><a title="פורום ניתוחי אי ספיקת לב" href="/rabin/he/departments-and-clinics/cardiothoracic-surgery/pages/heart_failure_forum.aspx">פורום ניתוחי אי ספיקת לב </a>
+                        </li><li><a title="פורום פרפור פרוזדורים" href="/rabin/he/departments-and-clinics/cardiothoracic-surgery/Pages/atrial_fibrillation_forum.aspx">פורום פרפור פרוזדורים</a></li>
+                        <li><a title="חדשות" href="/rabin/he/departments-and-clinics/cardiothoracic-surgery/Pages/cardiothoracic_surgery_news_collection.aspx">חדשות</a></li>
+                        <li><a title="חדשות" href="/rabin/he/departments-and-clinics/cardiothoracic-surgery/Pages/cardiothoracic_surgery_news_collection.aspx">חדשות</a></li>
+                        <li><a title="כתבות בתקשורת" href="/rabin/he/departments-and-clinics/cardiothoracic-surgery/Pages/cardiothoracic_surgery_press_collection.aspx">כתבות בתקשורת</a></li>
+                        <li><a title="הלב - מוסף בנושא רפואת הלב" href="https://calcalist360.webflow.io/magazine-issues/heart" target="_blank">הלב - מוסף בנושא רפואת הלב</a></li></ul>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        </div><!--side navbar item : end-->   
+  </div><!-- END : column -->
+        
+        
+        
+            </div>
+        </div>
+        </div>       
+
+
+<footer> <!-- footer -->
+    <div class="grid-row footer-top-navbar">
+        <div class="column-lg-12 column-md-12 column-sm-12 top-navbar-footer-wrapper">
+            <div class="grid-row">
+                <ul>
+                    <li>
+                        <a href="#">
+                            מחלקות ומרפאות
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#">
+                            שירותים מחוץ לסל
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#">
+                            צור קשר
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#">
+                            תנאי שימוש והגנת מידע
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#">
+                            פנייה לכבדי שמיעה
+                        </a>
+                    </li>
+                </ul>
+            </div>    
+        </div>
+    </div>
+
+<div class="hospitals-footer">
+    <div class="grid-container hospitals-footer-main-wrapper">
+        <div class="grid-row"> 
+            
+
+      <div class="column-lg-2 column-md-6 column-sm-12 hospitals-footer-wrapper">
+        <p class="title">
+            שירותים מחוץ לסל
+        </p>
+        
+        <div class="ul-wrapper-list">
+            <ul>
+                <li>
+                    <a href="#" class="noraml" target="_blank">
+                        בילינסון קורונה צ׳ק
+                    </a>   
+                </li>
+            </ul>
+        </div>  
+        
+    
+    <div class="ul-wrapper-list">
+        <ul>
+            <li>
+    
+                <label for="" class="bold">
+                    בילינסון:    
+                </label>   
+            </li>
+    
+            <li>
+                <a href="#" class="normal" target="_blank">
+                    בוטוקס לטיפול בריור
+                </a>  
+            </li>
+    
+            <li>
+                <a href="#" class="normal" target="_blank">
+                    שירותי גנטיקה ייחודיים
+                </a>
+            </li>
+    
+            <li>
+                <a href="#" class="normal" target="_blank">
+                    מרפאת מטיילים
+                </a>   
+            </li>
+    
+            <li>
+                <a href="#" class="normal" target="_blank">
+                    תזונה ודיאטה
+                </a>    
+            </li>
+    
+            <li>
+                <a href="#" class="normal" target="_blank">
+                    קלורימטריה
+                </a>    
+            </li>
+    
+            <li>
+                <a href="#" class="normal" target="_blank">
+                    היחידה לרפואה משלימה
+                </a>    
+            </li>
+    
+            <li>
+                <a href="#" class="normal" target="_blank">
+                    מרפאת זיכרון
+                </a>    
+            </li>
+    
+            <li>
+                <a href="#" class="normal" target="_blank">
+                    בריאות האישה
+                </a>    
+            </li>
+
+            <li>
+                <a href="#" class="normal" target="_blank">
+                    רואים את הילד
+                </a>    
+            </li>
+
+            <li>
+                <a href="#" class="normal" target="_blank">
+                    בדיקת צפיפות העצם
+                </a>    
+            </li>
+
+            <li>
+                <a href="#" class="normal" target="_blank">
+                    בדיקת ״זמן מעבר במעי הגס״
+                </a>    
+            </li>
+
+            <li>
+                <a href="#" class="normal" target="_blank">
+                    מרפאה לפסיכולוגיה רפואית
+                </a>    
+            </li>
+
+            <li>
+                <a href="#" class="normal" target="_blank">
+                    שירותי שר״י במעבדת הקרישה
+                </a>    
+            </li>
+
+            <li>
+                <a href="#" class="normal" target="_blank">
+                    שירותי פה ולסת
+                </a>    
+            </li>
+
+            <li>
+                <a href="#" class="normal" target="_blank">
+                    בדיקת טרום טיסה
+                </a>    
+            </li>
+
+            <li>
+                <a href="#" class="normal" target="_blank">
+                    שירות לאבחון מוקדם של 
+                    סרטן הריאה
+                </a>    
+            </li>
+
+            <li>
+                <a href="#" class="normal" target="_blank">
+                    המרכז לשיקום נהיגה
+                </a>    
+            </li>
+        </ul>
+    </div>  
+    </div>
+
+
+
+    <div class="column-lg-2 column-md-6 column-sm-12 hospitals-footer-wrapper">
+        <p class="title">
+            השרון:
+        </p>
+        
+    
+    <div class="ul-wrapper-list">
+        <ul>
+            <li>
+               
+                <label for="" class="bold">
+                    השרון: 
+                </label>
+            </li>
+    
+            <li>
+                <a href="#" class="normal" target="_blank">
+                    שיקום הלב
+                </a>  
+            </li>
+    
+            <li>
+                <a href="#" class="normal" target="_blank">
+                    סדנא לאורח חיים בריא
+                </a>
+            </li>
+    
+            <li>
+                <a href="#" class="normal" target="_blank">
+                    פיזיותרפיה
+                </a>   
+            </li>
+    
+            <li>
+                <a href="#" class="normal" target="_blank">
+                    פיברוסקאן - Fibroscan
+                </a>    
+            </li>
+    
+            <li>
+                <a href="#" class="normal" target="_blank">
+                    שירותי לב ריאה
+                </a>    
+            </li>
+    
+            <li>
+                <a href="#" class="normal" target="_blank">
+                    שירותי עור ייחודיים
+                </a>    
+            </li>
+        </ul>
+    </div>  
+ </div>
+            
+  
+    
+ <div class="column-lg-2 column-md-6 column-sm-12 hospitals-footer-wrapper">
+    <p class="title">
+        תחומים רפואיים
+    </p>
+    
+
+<div class="ul-wrapper-list">
+    <ul>
+        <li>
+            <a href="#" class="noraml" target="_blank">
+                קרדיולוגיה
+            </a>   
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                נשים
+            </a>  
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                סרטן
+            </a>
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                ניתוחי לב חזה
+            </a>   
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                השתלות איברים  
+            </a>    
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                כירורגיה
+            </a>    
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                גנטיקה  
+            </a>    
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                כבד 
+            </a>    
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                מחלקות נוספות
+            </a>    
+        </li>
+    </ul>
+</div>  
+</div>
+       
+
+   
+<div class="column-lg-2 column-md-6 column-sm-12 hospitals-footer-wrapper">
+    <p class="title">
+        בשבילכם
+    </p>
+    
+
+<div class="ul-wrapper-list">
+    <ul>
+        <li>
+            <a href="#" class="noraml" target="_blank">
+                מרכז קניות
+            </a>   
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                בי-מול
+            </a>  
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                כספומט
+            </a>
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                סוכנות דואר
+            </a>   
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                השכרת טלוויזיה 
+            </a>    
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                WI-FI
+            </a>    
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                שירותי דת
+            </a>    
+        </li>
+    </ul>
+</div>  
+</div>
+       
+
+<div class="column-lg-2 column-md-6 column-sm-12 hospitals-footer-wrapper">
+    <p class="title">
+        מידע למטופלים
+        ומבקרים
+    </p>
+    
+
+<div class="ul-wrapper-list">
+    <ul>
+        <li>
+            <a href="#" class="noraml" target="_blank">
+                איך מגיעים - בילינסון
+            </a>   
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                איך מגיעים - השרון
+            </a>  
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                חניה - בילינסון
+            </a>
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                חניה - השרון
+            </a>   
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                טלפונים חיוניים
+            </a>    
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                רשומות רפואיות - בילינסון
+            </a>    
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                רשומות רפואיות - השרון
+            </a>    
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                פורומים רפואיים
+            </a>    
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                יוטיוב - Youtube
+            </a>    
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                יד שרה
+            </a>    
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                עזר מציון
+            </a>    
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                אורכי התורים לניתוחים
+            </a>    
+        </li>
+    </ul>
+</div>  
+</div>
+
+    
+<div class="column-lg-2 column-md-6 column-sm-12 hospitals-footer-wrapper">
+    <p class="title">
+        מרכז רפואי רבין - 
+        בילינסון והשרון
+    </p>
+
+<div class="ul-wrapper-list">
+    <ul>
+        <li>
+          
+            <label for="" class="bold">
+                בית חולים בילינסון:
+            </label>
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                רחוב ז׳בוטינסקי 39, פתח תקווה
+            </a>  
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                מרכזייה: 03-9377377
+            </a>
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                מיון כללי: 03-9377011
+            </a>   
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                מיון נשים: 03-9377581/8 
+            </a>    
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                מיון יולדות: 03-9377590 
+            </a>    
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                מיון לידה: 03-9377490/1/2 
+            </a>    
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                חדר לידה: 03-9377490/1/2 
+            </a>    
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                פניות הציבור: 03-9372563
+            </a>    
+        </li>
+    </ul>
+</div>  
+
+
+<div class="ul-wrapper-list">
+    <ul>
+        <li>
+           
+            <label for="" class="bold">
+                בית חולים השרון:
+            </label>  
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                רחוב קק״ל 7, פתח תקווה
+            </a>  
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                מרכזייה: 03-9372372
+            </a>
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                מיון כללי: 03-9377011
+            </a>   
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                פניות הציבור: 03-9372563
+            </a>    
+        </li>
+    </ul>
+</div>  
+
+
+
+<div class="ul-wrapper-list">
+    <ul>
+        <li>
+          
+            <label for="" class="bold">
+                כללי:
+            </label> 
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                מוקד זימון תורים: 03-9376666
+            </a>  
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                פנייה לכבדי שמיעה
+            </a>
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                יק״ר (ר״מ 2): 03-9372563
+            </a>   
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                טופס צור קשר
+            </a>    
+        </li>
+
+        <li>
+            <a href="#" class="normal" target="_blank">
+                יחידות מנהליות
+            </a>    
+        </li>
+    </ul>
+</div>  
+
+
+</div>
+
+        </div>
+    </div>
+</div> 
+</footer>  <!-- footer -->
+
+</div>
+<div>
+</div>
+</div></div>
+
+
+<script src="./js/jquery/3.3.1/jquery.min.js"></script>
+<script src="./js/owl-carousel/2.3.4/assets/scripts/owl.carousel.min.js"></script>
+
+
+<script src="./js/components/privateAreaPopup.js"></script>
+<script src="./js/components/navbarDesktop.js"></script>
+<script src="./js/components/navbarMobile.js"></script>
+<script src="./js/components/langDropdown.js"></script>
+<script src="./js/components/tabs.js"></script>
+<script src="./js/components/accordion.js"></script>
+<script src="./js/components/stickyNavbar.js"></script>
+<script src="./js/components/loadMore.js"></script>
+<script src="./js/components/heroCarousel.js"></script>
+<script src="./js/components/emergencyHeroCarousel.js"></script>
+<script src="./js/components/videoCarousel.js"></script>
+<script src="./js/components/newsCarousel.js"></script>
+<script src="./js/components/emergencyCarousel.js"></script>
+<script src="./js/components/lobbyNewsCarousel.js"></script>
+<script src="./js/components/sharepoint.js"></script>
+<script src="./js/components/autocomplete.js"></script>
+
+</body>
+</html>
+    
+    
+
+    
+    
